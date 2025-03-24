@@ -11,7 +11,8 @@ jobs:
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v3
         with:
-          root_file: proposal/researchProposal-Yasin_Gul-Arjan_Broer.tex
+          root_file: researchProposal-Yasin_Gul-Arjan_Broer.tex
+          working_directory: proposal
       - name: Upload PDF file
         uses: actions/upload-artifact@v4
         with:
