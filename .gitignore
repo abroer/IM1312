@@ -309,3 +309,6 @@ TSWLatexianTemp*
 
 # IDEA
 .idea/
+
+# Texify-idea plugin
+out/
