@@ -5,6 +5,7 @@
 \usepackage{graphicx}
 \usepackage{caption}
 \usepackage{subcaption}
+\usepackage{hyperref}
 \title{Research proposal: Output correctness guarantees with LLM guardrails}
 \shorttitle{Output correctness guarantees with LLM guardrails}
 \author{Yasin G\"{u}l \and Arjan Broer}
@@ -40,6 +41,11 @@
         \item[RQ3.] What are the strengths and limitations of using RAG and moderator models in ensuring factual correctness in the medical domain?
     \end{description}
 
+    \subsection{Null hypothesis}
+    The null hypothesis for this research is that the guardrail mechanisms (RAG, moderator model, and their combination)
+    do not significantly improve the correctness of LLM outputs compared to a baseline without guardrails.
+    In the below research methods section, a baseline condition is used to represent the LMM without guardrails.
+
     \section{Research methods}
 
     This project will follow a design research methodology, consisting of iterative cycles of building, testing, and refining artifacts. The artifact in this case is a guardrail mechanism for LLMs that constrains or validates generated output.
@@ -65,11 +71,23 @@
 
     \subsection{Stimuli}
 
-    To evaluate the guardrails, we will use a fixed set of prompts that represent high-risk medical questions, particularly about medications (e.g., dosage, indications, and contraindications). These tasks represent real-world LLM use cases with identifiable correctness constraints \citep{pais2024medication}.
+    To evaluate the guardrails, we will use a fixed set of prompts that represent high-risk medical questions, particularly about medications (e.g., dosage, indications, and contraindications).
+    These tasks represent real-world LLM use cases with identifiable correctness constraints \citep{pais2024medication}.
+    The prompts will be formatted as formal medical recipes following the Dutch guidelines for medication prescriptions \citep{farmacotherapeutischkompas}.
+    \begin{verbatim}
+        Rp.   [Medicijnnaam] [Sterkte] [Vorm]
+          dtd. No. [Aantal]
+          S. [Instructie]
+    \end{verbatim}
 
     \subsection{Design}
 
-    Each condition will be tested across the same prompt set. Performance will be evaluated in terms of correctness, safety, and response quality. The design is iterative, allowing refinements to each method across evaluation cycles.
+    Each condition will be tested across the same prompt set.
+    Performance will be evaluated in terms of correctness, safety, and response quality.
+    Correctness of the output will be validated against the available medication guidelines available in the ``Farmacotherapeutisch Kompas'' \cite{farmacotherapeutischkompas} and the ``Geneesmiddeleninformatiebank'' \citep{geneesmiddeleninformatiebank}.
+    The design is iterative, allowing refinements to each method across evaluation cycles.
+    Each cycle will test the correctness of a medical prompt based on datasets correct and incorrect medical recipes.
+    The same dataset will be used for all four conditions, ensuring a fair comparison.
 
     \subsection{Procedure}
 
