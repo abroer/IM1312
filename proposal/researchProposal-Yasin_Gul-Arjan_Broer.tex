@@ -5,6 +5,7 @@
 \usepackage{graphicx}
 \usepackage{caption}
 \usepackage{subcaption}
+\usepackage{hyperref}
 \title{Research proposal: Output correctness guarantees with LLM guardrails}
 \shorttitle{Output correctness guarantees with LLM guardrails}
 \author{Yasin G\"{u}l \and Arjan Broer}
@@ -75,7 +76,10 @@
 
     \subsection{Design}
 
-    Each condition will be tested across the same prompt set. Performance will be evaluated in terms of correctness, safety, and response quality. The design is iterative, allowing refinements to each method across evaluation cycles.
+    Each condition will be tested across the same prompt set.
+    Performance will be evaluated in terms of correctness, safety, and response quality.
+    Correctness of the output will be validated against the available medication guidelines available in the ``Farmacotherapeutisch Kompas'' \cite{farmacotherapeutischkompas} and the ``Geneesmiddeleninformatiebank'' \citep{geneesmiddeleninformatiebank}.
+    The design is iterative, allowing refinements to each method across evaluation cycles.
 
     \subsection{Procedure}
 
