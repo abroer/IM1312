@@ -73,6 +73,12 @@
 
     To evaluate the guardrails, we will use a fixed set of prompts that represent high-risk medical questions, particularly about medications (e.g., dosage, indications, and contraindications).
     These tasks represent real-world LLM use cases with identifiable correctness constraints \citep{pais2024medication}.
+    The prompts will be formatted as formal medical recipes following the Dutch guidelines for medication prescriptions \citep{farmacotherapeutischkompas}.
+    \begin{verbatim}
+        Rp.   [Medicijnnaam] [Sterkte] [Vorm]
+          dtd. No. [Aantal]
+          S. [Instructie]
+    \end{verbatim}
 
     \subsection{Design}
 
