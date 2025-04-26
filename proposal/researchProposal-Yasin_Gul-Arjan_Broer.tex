@@ -40,6 +40,11 @@
         \item[RQ3.] What are the strengths and limitations of using RAG and moderator models in ensuring factual correctness in the medical domain?
     \end{description}
 
+    \subsection{Null hypothesis}
+    The null hypothesis for this research is that the guardrail mechanisms (RAG, moderator model, and their combination)
+    do not significantly improve the correctness of LLM outputs compared to a baseline without guardrails.
+    In the below research methods section, a baseline condition is used to represent the LMM without guardrails.
+
     \section{Research methods}
 
     This project will follow a design research methodology, consisting of iterative cycles of building, testing, and refining artifacts. The artifact in this case is a guardrail mechanism for LLMs that constrains or validates generated output.
@@ -65,7 +70,8 @@
 
     \subsection{Stimuli}
 
-    To evaluate the guardrails, we will use a fixed set of prompts that represent high-risk medical questions, particularly about medications (e.g., dosage, indications, and contraindications). These tasks represent real-world LLM use cases with identifiable correctness constraints \citep{pais2024medication}.
+    To evaluate the guardrails, we will use a fixed set of prompts that represent high-risk medical questions, particularly about medications (e.g., dosage, indications, and contraindications).
+    These tasks represent real-world LLM use cases with identifiable correctness constraints \citep{pais2024medication}.
 
     \subsection{Design}
 
