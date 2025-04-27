@@ -21,19 +21,32 @@
 
     \section{Background}
 
-    Large Language Models (LLMs) are capable of generating coherent and contextually appropriate responses. However, they occasionally produce hallucinations, factual inaccuracies, or unsafe advice. This risk becomes particularly critical in medical contexts, where incorrect information can have serious consequences.
+    Large Language Models (LLMs) are capable of generating coherent and contextually appropriate responses.
+    However, they occasionally produce hallucinations, factual inaccuracies, or unsafe advice.
+    This risk becomes particularly critical in medical contexts, where incorrect information can have serious consequences.
+    Recent research \cite{waldock2025curriculum} shows that LLMs can generate incorrect answers on medical prompts and students (or professionals) are required to valide the correctness of the output.
+    The study shows an accuracy rate of 50\% In this case the student acted as a human gaurdrail on the output of the LLM.
 
-    Examples include suggesting dangerous dosages, recommending inappropriate medications, or failing to warn against contraindications. For instance, providing a baby with an adult dose of ibuprofen, prescribing antibiotics for viral infections, or advising unsafe use of controlled substances are all examples where hallucinated outputs could cause harm.
+    Examples include suggesting dangerous dosages, recommending inappropriate medications, or failing to warn against contraindications. Cite[?]
+    For instance, providing a baby with an adult dose of ibuprofen, prescribing antibiotics for viral infections, or advising unsafe use of controlled substances are all examples where hallucinated outputs could cause harm.
 
-    Guardrails have emerged as a strategy to mitigate these risks by constraining or verifying model outputs. Techniques such as retrieval-augmented generation (RAG) and output moderation models have been proposed to systematically improve output reliability \citep{dong2024guardrails}. Retrieval-augmented generation grounds answers in external, verified sources, reducing hallucinations, while moderator models can filter unsafe or incorrect content after generation \citep{inan2023llamaguard}.
+    A performance review of ChatGPT on the United States Medical Licensing Examination (USMLE) showed that the model performed at a level comparable to human physicians, but with a significant number of incorrect answers \citep{kung2023performance}.
+    This shows that the model can be expected to produce incorrect answers, even when it is capable of generating correct ones.
 
-    In the medical domain, ensuring correct advice is even more crucial, particularly regarding medications. Recent work shows that LLMs can contribute to reducing medication instruction errors when proper safeguards are in place \citep{pais2024medication}.
+    Guardrails have emerged as a strategy to mitigate these risks by constraining or verifying model outputs.
+    Techniques such as retrieval-augmented generation (RAG) and output moderation models have been proposed to systematically improve output reliability \citep{dong2024guardrails}.
+    Retrieval-augmented generation grounds answers in external, verified sources, reducing hallucinations, while moderator models can filter unsafe or incorrect content after generation \citep{inan2023llamaguard}.
 
-    This proposal explores whether guardrails can be systematically designed and combined to guarantee correctness in LLM-generated answers for medication-related medical prompts. We particularly investigate the effectiveness of retrieval-augmented generation and moderator models, individually and in combination, to prevent incorrect or unsafe medical advice.
+    In the medical domain, ensuring correct advice is even more crucial, particularly regarding medications.
+    Recent work shows that LLMs can contribute to reducing medication instruction errors when proper safeguards are in place \citep{pais2024medication}.
+
+    This proposal explores whether guardrails can be systematically designed and combined to guarantee correctness in LLM-generated answers for medication-related medical prompts.
+    We particularly investigate the effectiveness of retrieval-augmented generation and moderator models, individually and in combination, to prevent incorrect or unsafe medical advice.
 
     \section{Research questions}
 
-    This research explores the design and evaluation of guardrails that aim to ensure the correctness of outputs produced by LLMs for medication-related medical queries. The central questions guiding this work are:
+    This research explores the design and evaluation of guardrails that aim to ensure the correctness of outputs produced by LLMs for medication-related medical queries.
+    The central questions guiding this work are:
 
     \begin{description}
         \item[RQ1.] Can a guardrail mechanism combining RAG and moderator models ensure 100\% correctness in LLM responses to medical prompts?
@@ -48,7 +61,8 @@
 
     \section{Research methods}
 
-    This project will follow a design research methodology, consisting of iterative cycles of building, testing, and refining artifacts. The artifact in this case is a guardrail mechanism for LLMs that constrains or validates generated output.
+    This project will follow a design research methodology \cite{wieringa2014design}, consisting of iterative cycles of building, testing, and refining artifacts.
+    The artifact in this case is a guardrail mechanism for LLMs that constrains or validates generated output.
 
     We will test and compare four experimental conditions to evaluate the effectiveness of different guardrail approaches for ensuring correctness in medical prompts:
 
