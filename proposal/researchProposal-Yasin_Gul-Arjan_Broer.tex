@@ -24,10 +24,10 @@
     Large Language Models (LLMs) are capable of generating coherent and contextually appropriate responses.
     However, they occasionally produce hallucinations, factual inaccuracies, or unsafe advice.
     This risk becomes particularly critical in medical contexts, where incorrect information can have serious consequences.
-    Recent research \cite{waldock2025curriculum} shows that LLMs can generate incorrect answers on medical prompts and students (or professionals) are required to valide the correctness of the output.
+    Recent research \citep{waldock2025curriculum} shows that LLMs can generate incorrect answers on medical prompts and students (or professionals) are required to valide the correctness of the output.
     The study shows an accuracy rate of 50\% In this case the student acted as a human gaurdrail on the output of the LLM.
 
-    Examples include suggesting dangerous dosages, recommending inappropriate medications, or failing to warn against contraindications \cite{luo2024clinical}, \cite{schieszer2023large}.
+    Examples include suggesting dangerous dosages, recommending inappropriate medications, or failing to warn against contraindications \citep{luo2024clinical}, \citep{schieszer2023large}.
     For instance, providing a baby with an adult dose of ibuprofen, prescribing antibiotics for viral infections, or advising unsafe use of controlled substances are all examples where hallucinated outputs could cause harm.
 
     A performance review of ChatGPT on the United States Medical Licensing Examination (USMLE) showed that the model performed at a level comparable to human physicians, but with a significant number of incorrect answers \citep{kung2023performance}.
@@ -61,7 +61,7 @@
 
     \section{Research methods}
 
-    This project will follow a design research methodology \cite{wieringa2014design}, consisting of iterative cycles of building, testing, and refining artifacts.
+    This project will follow a design research methodology \citep{wieringa2014design}, consisting of iterative cycles of building, testing, and refining artifacts.
     The artifact in this case is a guardrail mechanism for LLMs that constrains or validates generated output.
 
     We will test and compare four experimental conditions to evaluate the effectiveness of different guardrail approaches for ensuring correctness in medical prompts:
@@ -101,7 +101,7 @@
 
     Each condition will be tested across the same prompt set.
     Performance will be evaluated in terms of correctness, safety, and response quality.
-    Correctness of the output will be validated against the available medication guidelines available in the ``Farmacotherapeutisch Kompas'' \cite{farmacotherapeutischkompas} and the ``Geneesmiddeleninformatiebank'' \citep{geneesmiddeleninformatiebank}.
+    Correctness of the output will be validated against the available medication guidelines available in the ``Farmacotherapeutisch Kompas'' \citep{farmacotherapeutischkompas} and the ``Geneesmiddeleninformatiebank'' \citep{geneesmiddeleninformatiebank}.
     The design is iterative, allowing refinements to each method across evaluation cycles.
     Each cycle will test the correctness of a medical prompt based on datasets correct and incorrect medical recipes.
     The same dataset will be used for all four conditions, ensuring a fair comparison.
