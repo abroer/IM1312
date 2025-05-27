@@ -1,0 +1,48 @@
+% Preamble
+\documentclass[a4paper,doc,natbib]{apa6}
+
+% Packages
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{lipsum}
+
+\title{Output correctness guarantees with LLM guardrails}
+\shorttitle{Output correctness guarantees with LLM guardrails}
+\author{Yasin G\"{u}l \and Arjan Broer}
+\affiliation{Open University of the Netherlands}
+
+\abstract{
+    Large Language Models (LLMs) demonstrate impressive performance in a wide range of tasks, yet their outputs are not always correct or reliable.
+    This introduces challenges in applications where factual or logical correctness is critical.
+    This research investigates whether guardrails—mechanisms designed to constrain or verify model output—can provide guarantees for output correctness.
+    Using a design research approach, we will iteratively develop and evaluate such guardrails, focusing on how correctness can be defined, implemented, and assessed.
+    The study aims to identify what types of guarantees are feasible and what trade-offs are involved in enforcing them, with a particular focus on medical queries about medications.
+}
+
+% Document
+\begin{document}
+
+    \maketitle
+
+\section{Introduction}
+    \input{contents/introduction}
+    
+\section{Methods}
+    \input{contents/methods}
+
+\section{Results}
+    \input{contents/results}
+
+\section{Discussion}
+    \input{contents/discussion}
+
+\bibliography{literature}
+
+
+\end{document}
