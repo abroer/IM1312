@@ -13,8 +13,15 @@ jobs:
         with:
           root_file: researchProposal-Yasin_Gul-Arjan_Broer.tex
           working_directory: proposal
+      - name: Compile LateX document (Research Report)
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: researchReport-Yasin_Gul-Arjan_Broer.tex
+          working_directory: report
       - name: Upload PDF file
         uses: actions/upload-artifact@v4
         with:
-          name: PDF
-          path: proposal/researchProposal-Yasin_Gul-Arjan_Broer.pdf
+          name: PDFs
+          path: |
+            proposal/researchProposal-Yasin_Gul-Arjan_Broer.pdf
+            report/researchReport-Yasin_Gul-Arjan_Broer.pdf
