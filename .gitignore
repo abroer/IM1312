@@ -312,3 +312,6 @@ TSWLatexianTemp*
 
 # Texify-idea plugin
 out/
+
+# Local env settings
+.env
