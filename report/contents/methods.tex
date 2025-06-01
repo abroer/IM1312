@@ -20,9 +20,28 @@ We will test and compare four experimental conditions to evaluate the effectiven
     \item \textbf{Combined:} Both RAG and moderator-AI are applied sequentially—first grounding the answer, then checking its correctness.
 \end{itemize}
 
-\includegraphics[width=\textwidth]{figures/baselineSetup.png}
-
 The evaluation focuses on whether the guardrail meets defined correctness criteria in realistic scenarios and what design choices contribute to its effectiveness.
+
+\subsection{Baseline setup}
+In the baseline setup \ref{fig:baselineSetup} we will use a large language model (LLM) to generate responses to medical prompts without any guardrails.
+The medical question will be directly used as prompt for the LLM.
+Together with the prompt the LLM wil be provided with a system instruction that specifies the task and expected output format.
+
+\begin{figure}
+    \includegraphics[width=0.5\textwidth]{figures/baselineSetup.png}
+    \label{fig:baselineSetup}
+    \captionof{figure}{Baseline setup for generating medical recipes without guardrails.}
+\end{figure}
+
+\subsection{RAG-only setup}
+
+In the RAG-only setup, we will use a large language model (LLM) to generate responses to medical prompts, but with the addition of retrieval-augmented generation (RAG).
+
+\begin{figure}
+    \includegraphics[width=0.5\textwidth]{figures/RAGSetup.png}
+    \captionof{figure}{RAG-only setup for generating medical recipes with retrieval-augmented generation.}
+    \label{fig:ragSetup}
+\end{figure}
 
 \subsection{Apparatus}
 
