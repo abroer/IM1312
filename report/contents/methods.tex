@@ -29,8 +29,8 @@ Together with the prompt the LLM wil be provided with a system instruction that 
 
 \begin{figure}
     \includegraphics[width=0.5\textwidth]{figures/baselineSetup.png}
-    \label{fig:baselineSetup}
     \captionof{figure}{Baseline setup for generating medical recipes without guardrails.}
+    \label{fig:baselineSetup}
 \end{figure}
 
 \subsection{RAG-only setup}
@@ -38,11 +38,24 @@ Together with the prompt the LLM wil be provided with a system instruction that 
 In the RAG-only setup \ref{fig:ragSetup}, we will use a large language model (LLM) to generate responses to medical prompts, but with the addition of retrieval-augmented generation (RAG).
 The RAG component will retrieve relevant information about the medication from apotheek.nl and use that information to validate the generated output.
 The output will be validated for correctness of indication, dosage, frequency and duration of use.
+When the output is not correct the response will be blocked. Only when the output is correct, it will be returned to the user.
 
 \begin{figure}
     \includegraphics[width=0.5\textwidth]{figures/RAGSetup.png}
     \captionof{figure}{RAG-only setup for generating medical recipes with retrieval-augmented generation.}
     \label{fig:ragSetup}
+\end{figure}
+
+\subsection{Moderator-only setup}
+
+In the moderator-only setup \ref{fig:moderatorSetup}, we will use a large language model (LLM) to generate responses to medical prompts, but with the addition of a moderator model.
+The moderator model will evaluate the generated output and flag or block incorrect or unsafe content.
+The same model will be used for both the generation and moderation tasks, but with different system instructions.
+
+\begin{figure}
+    \includegraphics[width=0.5\textwidth]{figures/moderatorSetup.png}
+    \captionof{figure}{Moderator-only setup for generating medical recipes with a moderator model.}
+    \label{fig:moderatorSetup}
 \end{figure}
 
 \subsection{Apparatus}
