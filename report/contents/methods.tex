@@ -58,6 +58,19 @@ The same model will be used for both the generation and moderation tasks, but wi
     \label{fig:moderatorSetup}
 \end{figure}
 
+\subsection{Combined setup}
+
+In the combined setup \ref{fig:combinedSetup}, we will use a large language model (LLM) to generate responses to medical prompts, with both retrieval-augmented generation (RAG) and a moderator model.
+The RAG component will retrieve relevant information about the medication from apotheek.nl and use that information to validate the generated output.
+The moderator model will then evaluate the generated output and flag or block incorrect or unsafe content.
+The recipe is considered correct when it is both grounded in the retrieved information and passes the moderation check.
+
+\begin{figure}
+    \includegraphics[width=0.5\textwidth]{figures/combinedSetup.png}
+    \captionof{figure}{Combined setup for generating medical recipes with retrieval-augmented generation and a moderator model.}
+    \label{fig:combinedSetup}
+\end{figure}
+
 \subsection{Apparatus}
 
 The exact technical setup for this project has not yet been determined. An initial idea is to use existing large language model agents, such as ChatGPT with function-calling capabilities, to simulate retrieval-augmented generation and moderation behaviors without requiring full custom implementation in Python.
