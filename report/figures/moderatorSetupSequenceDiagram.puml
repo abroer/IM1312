@@ -1,0 +1,11 @@
+@startuml
+actor User
+participant "Gen AI\n(main model)" as GenAI
+participant "AI Validator\n(moderation model)" as Validator
+
+User -> GenAI : Ask medical question
+GenAI -> GenAI : Generate draft response
+GenAI -> Validator : Validate response (AI-powered)
+Validator --> GenAI : Validation result (e.g. correct/incorrect)
+GenAI --> User : Return (validated) response
+@enduml
