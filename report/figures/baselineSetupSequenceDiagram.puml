@@ -1,0 +1,8 @@
+@startuml
+actor User
+participant "Gen AI\n(main model)" as GenAI
+
+User -> GenAI : Ask medical question
+GenAI -> GenAI : Generate response
+GenAI --> User : Return response
+@enduml
