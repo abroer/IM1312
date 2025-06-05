@@ -1,0 +1,15 @@
+@startuml
+actor User
+participant "Gen AI\n(main model)" as GenAI
+participant "AI Retriever\n(RAG module)" as RAG
+participant "Medical Sources\n(e.g. apotheek.nl)" as Sources
+
+User -> GenAI : Ask medical question
+GenAI -> GenAI : Generate initial response
+GenAI -> RAG : Retrieve supporting medical documents
+RAG -> Sources : Query trusted medical knowledge base
+Sources --> RAG : Return relevant documents
+RAG --> GenAI : Provide retrieved information
+GenAI -> GenAI : Compare generated response with evidence
+GenAI --> User : Return final (validated) response
+@enduml
