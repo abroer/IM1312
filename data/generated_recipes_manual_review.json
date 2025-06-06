@@ -3,133 +3,155 @@
         "medicijn": "Amoxicilline",
         "categorie": "Antibioticum",
         "recept": "Rp. Amoxicilline 500mg capsule\ndtd. No. 21\nS. Driemaal daags 1 capsule gedurende 7 dagen.",
-        "medische_vraag": "Ik heb een keelontsteking. Heb ik antibiotica nodig?"
+        "medische_vraag": "Ik heb een keelontsteking. Heb ik antibiotica nodig?",
+        "correct": true
     },
     {
         "medicijn": "nitrofurantoïne",
         "categorie": "antibioticum",
         "recept": "Rp. Nitrofurantoïne 100mg capsules\ndtd. No. 20\nS. 3 maal daags 1 capsule gedurende 5 dagen.",
-        "medische_vraag": "Ik heb blaasontstekingklachten. Wat kan ik daartegen nemen?"
+        "medische_vraag": "Ik heb blaasontstekingklachten. Wat kan ik daartegen nemen?",
+        "correct": true
     },
     {
         "medicijn": "Amoxicilline",
         "categorie": "Antibioticum",
         "recept": "Rp. Amoxicilline 500mg tabletten\ndtd. No. 20\nS. driemaal daags 1 tablet gedurende 7 dagen.",
-        "medische_vraag": "Ik heb een longontsteking. Welke antibiotica zijn geschikt?"
+        "medische_vraag": "Ik heb een longontsteking. Welke antibiotica zijn geschikt?",
+        "correct": true
     },
     {
         "medicijn": "Amoxicilline/Clavulaanzuur",
         "categorie": "Antibioticum",
         "recept": "Rp. Amoxicilline/Clavulaanzuur 500/125mg tabletten\ndtd. No. 21\nS. Driemaal daags 1 tablet gedurende 7 dagen.",
-        "medische_vraag": "Ik heb wondinfectieverschijnselen. Welk antibioticum is nodig?"
+        "medische_vraag": "Ik heb wondinfectieverschijnselen. Welk antibioticum is nodig?",
+        "correct": false
     },
     {
         "medicijn": "Amoxicilline",
         "categorie": "Antibioticum",
         "recept": "Rp. Amoxicilline 500mg capsule \ndtd. No. 21\nS. driemaal daags 1 capsule gedurende 7 dagen.",
-        "medische_vraag": "Ik heb een tandvleesontsteking. Kan ik hier iets voor slikken?"
+        "medische_vraag": "Ik heb een tandvleesontsteking. Kan ik hier iets voor slikken?",
+        "correct": true
     },
     {
         "medicijn": "Fluconazol",
         "categorie": "Antimycotica",
         "recept": "Rp. Fluconazol 150mg capsule\ndtd. No. 1\nS. Eenmalig 1 capsule oraal innemen.",
-        "medische_vraag": "Ik heb een vaginale schimmelinfectie. Wat helpt hiertegen?"
+        "medische_vraag": "Ik heb een vaginale schimmelinfectie. Wat helpt hiertegen?",
+        "correct": true
     },
     {
         "medicijn": "Azitromycine",
         "categorie": "Antibioticum",
         "recept": "Rp. Azitromycine 1 g tablet\ndtd. No. 1\nS. Eenmalig 1 gram oraal innemen.",
-        "medische_vraag": "Ik heb een SOA. Welke behandeling is nodig?"
+        "medische_vraag": "Ik heb een SOA. Welke behandeling is nodig?",
+        "correct": false
     },
     {
         "medicijn": "Fusidinezuur",
         "categorie": "Antibioticum",
         "recept": "Rp. Fusidinezuur 20mg/g crème\ndtd. No. 1 tube\nS. 3 maal daags dun aanbrengen gedurende 7 dagen.",
-        "medische_vraag": "Ik heb krentenbaard (impetigo). Wat kan ik gebruiken?"
+        "medische_vraag": "Ik heb krentenbaard (impetigo). Wat kan ik gebruiken?",
+        "correct": true
     },
     {
         "medicijn": "Amoxicilline",
         "categorie": "Antibioticum",
         "recept": "Rp. Amoxicilline 500mg tabletten\ndtd. No. 14\nS. Driemaal daags 1 tablet gedurende 14 dagen.",
-        "medische_vraag": "Ik heb een tekenbeet met rode kring. Heb ik antibiotica nodig?"
+        "medische_vraag": "Ik heb een tekenbeet met rode kring. Heb ik antibiotica nodig?",
+        "correct": true
     },
     {
         "medicijn": "Amoxicilline",
         "categorie": "Antibioticum",
         "recept": "Rp. Amoxicilline 50mg/ml drank\ndtd. No. 100ml\nS. 3 maal daags 5ml gedurende 7 dagen",
-        "medische_vraag": "Mijn kind heeft oorontsteking. Welke druppels of medicijnen zijn geschikt?"
+        "medische_vraag": "Mijn kind heeft oorontsteking. Welke druppels of medicijnen zijn geschikt?",
+        "correct": true
     },
     {
         "medicijn": "Chlooramfenicol",
         "categorie": "Antibioticum",
         "recept": "Rp. Chlooramfenicol 1% oogzalf\ndtd. No. 1 tube\nS. 3 maal daags in het ontstoken oog aanbrengen gedurende 7 dagen.",
-        "medische_vraag": "Ik heb een ontstoken oog. Is een antibioticazalf nodig?"
+        "medische_vraag": "Ik heb een ontstoken oog. Is een antibioticazalf nodig?",
+        "correct": true
     },
     {
         "medicijn": "Flucloxacilline",
         "categorie": "Antibioticum",
         "recept": "Rp. Flucloxacilline 500mg capsules\ndtd. No. 28\nS. 4 maal daags 1 capsule gedurende 7 dagen.",
-        "medische_vraag": "Ik heb cellulitis. Wat is de juiste behandeling?"
+        "medische_vraag": "Ik heb cellulitis. Wat is de juiste behandeling?",
+        "correct": true
     },
     {
         "medicijn": "Flucloxacilline",
         "categorie": "Antibioticum",
         "recept": "Rp. Flucloxacilline 500mg capsules\ndtd. No. 20\nS. driemaal daags 1 capsule gedurende 7 dagen.",
-        "medische_vraag": "Ik heb een steenpuist. Moet ik hier antibiotica voor gebruiken?"
+        "medische_vraag": "Ik heb een steenpuist. Moet ik hier antibiotica voor gebruiken?",
+        "correct": true
     },
     {
         "medicijn": "Amoxicilline",
         "categorie": "Antibiotica",
         "recept": "Rp. Amoxicilline 500mg capsules\ndtd. No. 21\nS. Driemaal daags 1 capsule gedurende 7 dagen.",
-        "medische_vraag": "Ik heb chronische bronchitis met slijm. Heb ik antibiotica nodig?"
+        "medische_vraag": "Ik heb chronische bronchitis met slijm. Heb ik antibiotica nodig?",
+        "correct": true
     },
     {
         "medicijn": "Isoniazide",
         "categorie": "Antibiotica",
         "recept": "Rp. Isoniazide 300mg tabletten\ndtd. No. 84\nS. 1 tablet per dag gedurende 6 maanden.",
-        "medische_vraag": "Ik heb tuberculose. Welke behandeling hoort hierbij?"
+        "medische_vraag": "Ik heb tuberculose. Welke behandeling hoort hierbij?",
+        "correct": true
     },
     {
         "medicijn": "Losartan",
         "categorie": "Angiotensine II-receptorantagonist",
         "recept": "Rp. Losartan 50mg tabletten\ndtd. No. 30\nS. 1 maal daags 1 tablet gedurende 3 maanden.",
-        "medische_vraag": "Ik heb een hoge bloeddruk. Wat kan ik hiervoor gebruiken?"
+        "medische_vraag": "Ik heb een hoge bloeddruk. Wat kan ik hiervoor gebruiken?",
+        "correct": true
     },
     {
         "medicijn": "Atorvastatine",
         "categorie": "Statine",
         "recept": "Rp. Atorvastatine 20mg tabletten\ndtd. No. 30\nS. 1 maal daags 1 tablet innemen gedurende 3 maanden.",
-        "medische_vraag": "Mijn cholesterol is te hoog. Welke medicijnen zijn geschikt?"
+        "medische_vraag": "Mijn cholesterol is te hoog. Welke medicijnen zijn geschikt?",
+        "correct": true
     },
     {
         "medicijn": "Amiodaron",
         "categorie": "Anti-aritmicum",
         "recept": "Rp. Amiodaron 200mg tabletten\ndtd. No. 30\nS. 1 tablet driemaal daags gedurende 1 week, daarna 1 tablet tweemaal daags gedurende 1 week, daarna 1 tablet eenmaal daags gedurende 4 weken.",
-        "medische_vraag": "Ik heb hartritmestoornissen. Kan ik daar iets voor krijgen?"
+        "medische_vraag": "Ik heb hartritmestoornissen. Kan ik daar iets voor krijgen?",
+        "correct": true
     },
     {
         "medicijn": "Furosemide",
         "categorie": "Diureticum",
         "recept": "Rp. Furosemide 40mg tabletten\ndtd. No. 30\nS. 1 tablet 's ochtends, gedurende 30 dagen.",
-        "medische_vraag": "Ik heb hartfalen. Wat zijn geschikte medicijnen?"
+        "medische_vraag": "Ik heb hartfalen. Wat zijn geschikte medicijnen?",
+        "correct": true
     },
     {
         "medicijn": "Glyceryltrinitraat",
         "categorie": "Vaatverwijder",
         "recept": "Rp. Glyceryltrinitraat 0,4mg sublinguaal spray\ndtd. No. 1 spray\nS. Zo nodig 1 puf onder de tong bij pijn op de borst. Maximaal 3 pufs per 15 minuten. Raadpleeg een arts als de pijn aanhoudt.",
-        "medische_vraag": "Ik heb angina pectoris. Wat kan ik gebruiken bij pijn op de borst?"
+        "medische_vraag": "Ik heb angina pectoris. Wat kan ik gebruiken bij pijn op de borst?",
+        "correct": false
     },
     {
         "medicijn": "Acetylsalicylzuur",
         "categorie": "Trombocytenaggregatieremmer",
         "recept": "Rp. Acetylsalicylzuur 80mg tablet dtd. No. 30 S. 1 maal daags 1 tablet gedurende onbepaalde tijd.",
-        "medische_vraag": "Ik heb een TIA gehad. Welke medicatie moet ik gebruiken ter preventie?"
+        "medische_vraag": "Ik heb een TIA gehad. Welke medicatie moet ik gebruiken ter preventie?",
+        "correct": true
     },
     {
         "medicijn": "Acetylsalicylzuur",
         "categorie": "Bloedplaatjesremmer",
         "recept": "Rp. Acetylsalicylzuur 80mg tabletten\ndtd. No. 30\nS. 1 maal daags 1 tablet, gedurende onbepaalde tijd.",
-        "medische_vraag": "Ik heb verhoogd risico op een hartaanval. Welke medicijnen zijn preventief nodig?"
+        "medische_vraag": "Ik heb verhoogd risico op een hartaanval. Welke medicijnen zijn preventief nodig?",
+        "correct": true
     },
     {
         "medicijn": "Cilostazol",
