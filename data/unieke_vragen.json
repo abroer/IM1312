@@ -1,201 +1,1824 @@
 [
-  "Ik heb een keelontsteking. Heb ik antibiotica nodig?",
-  "Ik heb blaasontstekingklachten. Wat kan ik daartegen nemen?",
-  "Ik heb een longontsteking. Welke antibiotica zijn geschikt?",
-  "Ik heb wondinfectieverschijnselen. Welk antibioticum is nodig?",
-  "Ik heb een tandvleesontsteking. Kan ik hier iets voor slikken?",
-  "Ik heb een vaginale schimmelinfectie. Wat helpt hiertegen?",
-  "Ik heb een SOA. Welke behandeling is nodig?",
-  "Ik heb krentenbaard (impetigo). Wat kan ik gebruiken?",
-  "Ik heb een tekenbeet met rode kring. Heb ik antibiotica nodig?",
-  "Mijn kind heeft oorontsteking. Welke druppels of medicijnen zijn geschikt?",
-  "Ik heb een ontstoken oog. Is een antibioticazalf nodig?",
-  "Ik heb cellulitis. Wat is de juiste behandeling?",
-  "Ik heb een steenpuist. Moet ik hier antibiotica voor gebruiken?",
-  "Ik heb chronische bronchitis met slijm. Heb ik antibiotica nodig?",
-  "Ik heb tuberculose. Welke behandeling hoort hierbij?",
-  "Ik heb een hoge bloeddruk. Wat kan ik hiervoor gebruiken?",
-  "Mijn cholesterol is te hoog. Welke medicijnen zijn geschikt?",
-  "Ik heb hartritmestoornissen. Kan ik daar iets voor krijgen?",
-  "Ik heb hartfalen. Wat zijn geschikte medicijnen?",
-  "Ik heb angina pectoris. Wat kan ik gebruiken bij pijn op de borst?",
-  "Ik heb een TIA gehad. Welke medicatie moet ik gebruiken ter preventie?",
-  "Ik heb verhoogd risico op een hartaanval. Welke medicijnen zijn preventief nodig?",
-  "Ik heb perifeer arterieel vaatlijden. Wat kan ik slikken?",
-  "Ik heb last van oedeem. Is er een vochtafdrijvend middel geschikt?",
-  "Ik heb een hoge bloeddruk ondanks leefstijl. Wat kan ik nu proberen?",
-  "Ik heb trombose gehad. Moet ik antistolling gebruiken?",
-  "Ik heb een kunstklep. Wat moet ik gebruiken aan bloedverdunners?",
-  "Ik gebruik antistolling en ga geopereerd worden. Wat is nodig?",
-  "Ik heb een longembolie gehad. Welke bloedverdunner heb ik nodig?",
-  "Ik heb atriumfibrilleren. Welke antistolling is geschikt?",
-  "Mijn bloedsuiker is te hoog. Wat kan ik innemen?",
-  "Ik heb diabetes type 2. Welke medicatie kan ik gebruiken?",
-  "Ik spuit insuline maar blijf ontregeld. Wat zijn andere opties?",
-  "Ik heb overgewicht en voorstadium van diabetes. Wat kan ik nemen?",
-  "Ik heb last van hypo's. Hoe kan ik mijn medicatie aanpassen?",
-  "Ik heb schildklierproblemen. Moet ik levothyroxine slikken?",
-  "Ik heb trage schildklier. Welke dosering thyroxine is geschikt?",
-  "Ik heb de ziekte van Addison. Wat moet ik hiervoor gebruiken?",
-  "Ik heb migraine. Wat helpt tegen de aanvallen?",
-  "Ik heb spanningshoofdpijn. Wat kan ik nemen?",
-  "Ik heb artrose. Wat is een goede pijnstiller?",
-  "Ik heb reumatoïde artritis. Wat kan ik gebruiken aan ontstekingsremmers?",
-  "Ik heb zenuwpijn. Wat is hiervoor geschikt?",
-  "Ik heb rugpijn. Wat helpt hierbij?",
-  "Ik heb fibromyalgie. Zijn er medicijnen die kunnen helpen?",
-  "Ik heb Parkinson. Welke medicatie kan ik gebruiken?",
-  "Ik heb epilepsie. Wat is de juiste medicatie?",
-  "Ik heb restless legs. Wat kan ik nemen?",
-  "Ik voel me depressief. Wat kan ik slikken?",
-  "Ik heb angstklachten. Welke medicijnen zijn geschikt?",
-  "Ik heb paniekaanvallen. Wat kan ik nemen?",
-  "Ik slaap slecht. Is er iets wat ik kan gebruiken?",
-  "Ik heb ADHD. Welke medicatie helpt hierbij?",
-  "Ik heb psychoseklachten. Wat kan ik hiervoor gebruiken?",
-  "Ik heb bipolaire stoornis. Welke medicatie past hierbij?",
-  "Ik ben gestopt met antidepressiva en voel me slecht. Wat nu?",
-  "Ik heb verslavingsproblemen. Zijn er medicijnen die kunnen helpen?",
-  "Ik wil stoppen met roken. Wat kan ik gebruiken?",
-  "Ik heb astma. Welke inhalatiemedicatie is nodig?",
-  "Ik heb COPD. Wat zijn geschikte medicijnen?",
-  "Ik heb hooikoorts. Wat kan ik slikken of neusspray?",
-  "Ik heb een allergische reactie. Welke medicatie helpt?",
-  "Ik heb een verstopte neus. Wat kan ik gebruiken?",
-  "Ik heb kortademigheid bij inspanning. Wat is de juiste behandeling?",
-  "Ik heb bronchospasme. Wat helpt hiertegen?",
-  "Ik heb een rookershoest. Is er iets dat helpt?",
-  "Ik heb keelpijn. Kan ik iets krijgen dat helpt?",
-  "Ik heb een aften in de mond. Wat kan ik gebruiken?",
-  "Ik heb een candidainfectie in de mond. Wat helpt?",
-  "Ik heb sinusitis. Wat is een geschikte behandeling?",
-  "Ik heb een loopoor. Welke oordruppels zijn nodig?",
-  "Ik heb oorpijn met koorts. Is antibiotica nodig?",
-  "Ik heb diarree. Wat kan ik gebruiken?",
-  "Ik heb obstipatie. Wat helpt?",
-  "Ik heb PDS. Welke medicatie is geschikt?",
-  "Ik heb leverklachten. Wat zijn de medicatieopties?",
-  "Ik heb last van misselijkheid. Wat kan ik nemen?",
-  "Ik heb een maagzweer. Wat is de juiste behandeling?",
-  "Ik gebruik NSAID’s. Moet ik maagbescherming gebruiken?",
-  "Ik heb een helicobacter-infectie. Wat moet ik gebruiken?",
-  "Ik heb galstenen. Kan ik iets nemen tegen de pijn?",
-  "Ik heb eczeem. Wat is de juiste zalf?",
-  "Ik heb psoriasis. Wat is hiervoor geschikt?",
-  "Ik heb een allergische huiduitslag. Wat helpt?",
-  "Ik heb acné. Wat is een effectieve behandeling?",
-  "Ik heb rosacea. Welke crème of tabletten zijn geschikt?",
-  "Ik heb een insectenbeet met zwelling. Wat kan ik gebruiken?",
-  "Ik heb schimmel tussen mijn tenen. Wat helpt?",
-  "Ik heb een wrat. Wat is geschikt om te smeren?",
-  "Ik heb netelroos. Wat kan ik gebruiken?",
-  "Ik heb urineverlies. Wat kan ik gebruiken?",
-  "Ik heb overactieve blaas. Is er medicatie voor?",
-  "Ik heb een prostaatvergroting. Wat kan ik gebruiken?",
-  "Ik heb menstruatiepijn. Wat helpt?",
-  "Ik heb hevige menstruaties. Wat is een geschikte behandeling?",
-  "Ik wil anticonceptie gebruiken. Wat zijn de opties?",
-  "Ik wil stoppen met de pil. Moet ik iets anders nemen?",
-  "Ik heb overgangsklachten. Wat kan ik gebruiken?",
-  "Ik heb een vaginale infectie. Wat helpt?",
-  "Ik heb erectieproblemen. Wat kan ik nemen?",
-  "Ik heb een bacteriële huidinfectie. Welke antibiotica zijn nodig?",
-  "Ik heb spruw. Wat helpt tegen de schimmel in mijn mond?",
-  "Ik heb gordelroos. Wat kan ik hiervoor innemen?",
-  "Ik heb wratten door HPV. Wat kan ik gebruiken?",
-  "Ik heb last van een schimmelnagel. Wat is een geschikte behandeling?",
-  "Ik heb voetschimmel. Wat kan ik gebruiken?",
-  "Ik heb luizen. Wat is een goede medicamenteuze behandeling?",
-  "Ik heb een lintworm. Wat is een geschikt medicijn?",
-  "Ik heb malaria opgelopen. Wat is de aanbevolen behandeling?",
-  "Ik ga op reis naar een risicogebied. Welke malaria-profylaxe heb ik nodig?",
-  "Ik heb vaginale droogheid. Wat kan ik hiervoor gebruiken?",
-  "Ik heb terugkerende blaasontstekingen. Kan ik iets preventiefs nemen?",
-  "Ik heb pijn bij het vrijen. Wat kan ik daarvoor gebruiken?",
-  "Ik heb pijnlijke menstruaties. Wat is effectieve pijnstilling?",
-  "Ik heb endometriose. Welke medicijnen helpen bij de klachten?",
-  "Ik heb PCOS. Wat zijn mijn medicatieopties?",
-  "Ik heb een vroege overgang. Wat kan ik innemen?",
-  "Ik heb borstvoedingsproblemen. Is medicatie nodig?",
-  "Ik heb verhoogde prolactine. Wat kan ik slikken?",
-  "Ik heb PMS-klachten. Wat helpt tegen de stemmingswisselingen?",
-  "Ik heb veel acne tijdens de menstruatie. Is er een hormoonbehandeling mogelijk?",
-  "Ik wil een morning-afterpil. Welke kan ik gebruiken?",
-  "Ik heb een vaginale bacteriële infectie. Welke medicatie is geschikt?",
-  "Ik heb een schimmelinfectie op mijn huid. Welke crème moet ik gebruiken?",
-  "Ik heb net een tand getrokken. Moet ik antibiotica gebruiken?",
-  "Ik heb kiespijn na een wortelkanaalbehandeling. Wat helpt?",
-  "Ik heb tandvleesontsteking. Is er een mondspoelmiddel dat werkt?",
-  "Ik heb last van tandenknarsen. Kan ik spierverslappers gebruiken?",
-  "Ik heb een plotselinge allergische reactie gehad. Heb ik een EpiPen nodig?",
-  "Ik heb atopisch eczeem. Wat is de juiste onderhoudsbehandeling?",
-  "Ik heb zonneallergie. Wat kan ik preventief gebruiken?",
-  "Ik heb brandwonden. Welke zalf kan ik gebruiken?",
-  "Ik heb psoriasis aan mijn hoofdhuid. Wat is geschikte medicatie?",
-  "Ik heb haaruitval. Is er medicatie die kan helpen?",
-  "Ik heb hyperpigmentatie. Wat kan ik hiervoor gebruiken?",
-  "Ik heb een koortslip. Wat helpt hiertegen?",
-  "Ik heb een vaginale jeuk. Welke zalf of medicatie is geschikt?",
-  "Ik heb een bacteriële vaginose. Wat is de juiste behandeling?",
-  "Ik heb een schimmelinfectie aan de penis. Wat helpt?",
-  "Ik heb urethritis. Welke behandeling is geschikt?",
-  "Ik heb vaak een opgeblazen gevoel. Wat helpt daartegen?",
-  "Ik heb galblaasproblemen. Wat kan ik tegen de pijn nemen?",
-  "Ik heb een nieraandoening. Is er medicatie nodig voor de eiwituitscheiding?",
-  "Ik heb nierstenen. Wat helpt tegen de pijn?",
-  "Ik heb jicht. Welke medicijnen kan ik gebruiken bij een aanval?",
-  "Ik heb een verhoogd urinezuurgehalte. Wat kan ik preventief nemen?",
-  "Ik heb lupus. Wat is een geschikte onderhoudsmedicatie?",
-  "Ik heb de ziekte van Crohn. Wat is de standaardbehandeling?",
-  "Ik heb colitis ulcerosa. Wat zijn mijn medicatieopties?",
-  "Ik heb lactose-intolerantie. Is er medicatie die ik kan nemen bij een foutje?",
-  "Ik heb coeliakie. Moet ik nog iets aanvullends gebruiken?",
-  "Ik heb een B12-tekort. Moet ik injecties of tabletten gebruiken?",
-  "Ik heb ijzertekort. Welke ijzertabletten zijn het best?",
-  "Ik heb een vitamine D-tekort. Welke dosering moet ik nemen?",
-  "Ik heb bloedarmoede. Wat is de juiste behandeling?",
-  "Ik heb ADHD bij volwassenen. Welke medicatie werkt goed?",
-  "Ik heb borderlineklachten. Is er medicatie die kan helpen?",
-  "Ik heb autisme en veel onrust. Kan medicatie helpen?",
-  "Ik heb nachtmerries door PTSS. Wat kan ik daarvoor krijgen?",
-  "Ik heb manische klachten. Welke stemmingsstabilisator past daarbij?",
-  "Ik heb cognitieve achteruitgang. Zijn er medicijnen tegen dementie?",
-  "Ik heb overmatig zweten. Wat helpt hiertegen?",
-  "Ik heb slaapproblemen door ploegendienst. Wat kan ik gebruiken?",
-  "Ik heb ochtendmisselijkheid in de zwangerschap. Wat mag ik gebruiken?",
-  "Ik heb zwangerschapsdiabetes. Welke behandeling is nodig?",
-  "Ik heb hoge bloeddruk tijdens de zwangerschap. Wat is veilig?",
-  "Ik heb een blaasontsteking tijdens de zwangerschap. Wat mag ik gebruiken?",
-  "Ik heb pijn na een operatie. Wat kan ik veilig nemen?",
-  "Ik heb hevige pijn door kanker. Wat is een geschikte pijnstiller?",
-  "Ik heb kanker en last van misselijkheid door chemo. Wat kan ik slikken?",
-  "Ik heb neuropathie door chemotherapie. Welke medicatie helpt?",
-  "Ik heb een hersenschudding gehad. Wat mag ik nemen tegen hoofdpijn?",
-  "Ik heb een been gebroken. Wat is een geschikte pijnstiller voor langere tijd?",
-  "Ik heb een spierscheur. Wat helpt tegen de pijn en ontsteking?",
-  "Ik heb een allergie voor penicilline. Wat kan ik gebruiken als alternatief?",
-  "Ik heb een zeldzame ziekte waarvoor ik dure medicatie nodig heb. Hoe werkt dat?",
-  "Ik wil een recept voor reisziekte. Wat is geschikt voor kinderen?",
-  "Ik ga vliegen en heb tromboserisico. Wat moet ik slikken?",
-  "Ik ben vaak wagenziek. Wat helpt echt goed?",
-  "Ik heb een vliegangst. Kan ik iets kalmerends krijgen?",
-  "Ik heb last van examenvrees. Wat kan ik tijdelijk nemen?",
-  "Ik heb spreekangst. Kan ik hier medicatie voor gebruiken?",
-  "Ik heb problemen met agressieregulatie. Helpt medicatie?",
-  "Ik heb moeite met stoppen van cannabis. Kan medicatie ondersteunen?",
-  "Ik heb overgewicht. Is er medicatie die kan helpen met afvallen?",
-  "Ik heb last van een ticstoornis. Kan ik hiervoor iets gebruiken?",
-  "Ik heb een zweetvoetprobleem. Wat kan ik hiervoor gebruiken?",
-  "Ik heb een jetlag. Wat kan ik nemen om beter te slapen?",
-  "Ik heb last van spierkrampen. Is er iets wat helpt?",
-  "Ik heb vaak verkoudheid en wil iets ter ondersteuning. Wat kan ik gebruiken?",
-  "Ik heb hooikoorts én astma. Wat is een goede gecombineerde behandeling?",
-  "Ik heb brandend maagzuur ondanks dieet. Wat kan ik aanvullend slikken?",
-  "Ik heb last van hyperventilatie. Wat kan ik gebruiken bij acute aanvallen?",
-  "Ik heb een chronische hoest. Kan ik hier iets voor krijgen?",
-  "Ik heb slikproblemen. Zijn er medicijnen om de speekselproductie te verminderen?",
-  "Ik heb spastische spieren door MS. Wat kan ik nemen?",
-  "Ik heb MS. Wat zijn mijn onderhoudsmedicijnen?",
-  "Ik heb een vergrote schildklier. Moet ik iets innemen?",
-  "Ik heb een verhoogde calciumspiegel. Wat kan ik gebruiken om dat te verlagen?"
+  {
+    "vraag": "Ik heb een keelontsteking. Heb ik antibiotica nodig?",
+    "patientinformatie": {
+      "leeftijd": 34,
+      "geslacht": "vrouw",
+      "koorts": true,
+      "duur_klachten_dagen": 3,
+      "pijn_bij_slikken": true,
+      "tonsillen_met_pus": true,
+      "hoesten": false,
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb blaasontstekingklachten. Wat kan ik daartegen nemen?",
+    "patientinformatie": {
+      "leeftijd": 27,
+      "geslacht": "vrouw",
+      "koorts": false,
+      "pijn_bij_plassen": true,
+      "zwanger": false,
+      "eerder_blaasontsteking": true
+    }
+  },
+  {
+    "vraag": "Ik heb een longontsteking. Welke antibiotica zijn geschikt?",
+    "patientinformatie": {
+      "leeftijd": 71,
+      "geslacht": "man",
+      "koorts": true,
+      "chronische_ziekte": "COPD",
+      "penicilline_allergie": false,
+      "CRB65_score": 1
+    }
+  },
+  {
+    "vraag": "Ik heb wondinfectieverschijnselen. Welk antibioticum is nodig?",
+    "patientinformatie": {
+      "leeftijd": 56,
+      "geslacht": "man",
+      "chronische_ziekte": "geen",
+      "penicilline_allergie": true
+    }
+  },
+  {
+    "vraag": "Ik heb een tandvleesontsteking. Kan ik hier iets voor slikken?",
+    "patientinformatie": {
+      "leeftijd": 69,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "geen",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb een vaginale schimmelinfectie. Wat helpt hiertegen?",
+    "patientinformatie": {
+      "leeftijd": 32,
+      "geslacht": "vrouw",
+      "jeuk": true,
+      "witte_afscheiding": true,
+      "eerder_gehad": true
+    }
+  },
+  {
+    "vraag": "Ik heb een SOA. Welke behandeling is nodig?",
+    "patientinformatie": {
+      "leeftijd": 31,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "diabetes",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb krentenbaard (impetigo). Wat kan ik gebruiken?",
+    "patientinformatie": {
+      "leeftijd": 31,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "diabetes",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb een tekenbeet met rode kring. Heb ik antibiotica nodig?",
+    "patientinformatie": {
+      "leeftijd": 60,
+      "geslacht": "man",
+      "chronische_ziekte": "COPD",
+      "penicilline_allergie": true
+    }
+  },
+  {
+    "vraag": "Mijn kind heeft oorontsteking. Welke druppels of medicijnen zijn geschikt?",
+    "patientinformatie": {
+      "leeftijd": 51,
+      "geslacht": "man",
+      "chronische_ziekte": "geen",
+      "penicilline_allergie": true
+    }
+  },
+  {
+    "vraag": "Ik heb een ontstoken oog. Is een antibioticazalf nodig?",
+    "patientinformatie": {
+      "leeftijd": 57,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "geen",
+      "penicilline_allergie": true
+    }
+  },
+  {
+    "vraag": "Ik heb cellulitis. Wat is de juiste behandeling?",
+    "patientinformatie": {
+      "leeftijd": 50,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "COPD",
+      "penicilline_allergie": true
+    }
+  },
+  {
+    "vraag": "Ik heb een steenpuist. Moet ik hier antibiotica voor gebruiken?",
+    "patientinformatie": {
+      "leeftijd": 50,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "geen",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb chronische bronchitis met slijm. Heb ik antibiotica nodig?",
+    "patientinformatie": {
+      "leeftijd": 22,
+      "geslacht": "man",
+      "chronische_ziekte": "COPD",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb tuberculose. Welke behandeling hoort hierbij?",
+    "patientinformatie": {
+      "leeftijd": 52,
+      "geslacht": "man",
+      "chronische_ziekte": "diabetes",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb een hoge bloeddruk. Wat kan ik hiervoor gebruiken?",
+    "patientinformatie": {
+      "leeftijd": 54,
+      "geslacht": "man",
+      "gemeten_bloeddruk": "160/95",
+      "diabetes": false,
+      "roken": true,
+      "familiaire_anamnese": true
+    }
+  },
+  {
+    "vraag": "Mijn cholesterol is te hoog. Welke medicijnen zijn geschikt?",
+    "patientinformatie": {
+      "leeftijd": 40,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "geen",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb hartritmestoornissen. Kan ik daar iets voor krijgen?",
+    "patientinformatie": {
+      "leeftijd": 51,
+      "geslacht": "man",
+      "chronische_ziekte": "geen",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb hartfalen. Wat zijn geschikte medicijnen?",
+    "patientinformatie": {
+      "leeftijd": 48,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "geen",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb angina pectoris. Wat kan ik gebruiken bij pijn op de borst?",
+    "patientinformatie": {
+      "leeftijd": 36,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "diabetes",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb een TIA gehad. Welke medicatie moet ik gebruiken ter preventie?",
+    "patientinformatie": {
+      "leeftijd": 44,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "COPD",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb verhoogd risico op een hartaanval. Welke medicijnen zijn preventief nodig?",
+    "patientinformatie": {
+      "leeftijd": 50,
+      "geslacht": "man",
+      "chronische_ziekte": "COPD",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb perifeer arterieel vaatlijden. Wat kan ik slikken?",
+    "patientinformatie": {
+      "leeftijd": 68,
+      "geslacht": "man",
+      "chronische_ziekte": "geen",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb last van oedeem. Is er een vochtafdrijvend middel geschikt?",
+    "patientinformatie": {
+      "leeftijd": 58,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "COPD",
+      "penicilline_allergie": true
+    }
+  },
+  {
+    "vraag": "Ik heb een hoge bloeddruk ondanks leefstijl. Wat kan ik nu proberen?",
+    "patientinformatie": {
+      "leeftijd": 54,
+      "geslacht": "man",
+      "gemeten_bloeddruk": "160/95",
+      "diabetes": false,
+      "roken": true,
+      "familiaire_anamnese": true
+    }
+  },
+  {
+    "vraag": "Ik heb trombose gehad. Moet ik antistolling gebruiken?",
+    "patientinformatie": {
+      "leeftijd": 26,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "COPD",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb een kunstklep. Wat moet ik gebruiken aan bloedverdunners?",
+    "patientinformatie": {
+      "leeftijd": 47,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "COPD",
+      "penicilline_allergie": true
+    }
+  },
+  {
+    "vraag": "Ik gebruik antistolling en ga geopereerd worden. Wat is nodig?",
+    "patientinformatie": {
+      "leeftijd": 27,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "diabetes",
+      "penicilline_allergie": true
+    }
+  },
+  {
+    "vraag": "Ik heb een longembolie gehad. Welke bloedverdunner heb ik nodig?",
+    "patientinformatie": {
+      "leeftijd": 55,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "COPD",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb atriumfibrilleren. Welke antistolling is geschikt?",
+    "patientinformatie": {
+      "leeftijd": 66,
+      "geslacht": "man",
+      "chronische_ziekte": "COPD",
+      "penicilline_allergie": true
+    }
+  },
+  {
+    "vraag": "Mijn bloedsuiker is te hoog. Wat kan ik innemen?",
+    "patientinformatie": {
+      "leeftijd": 53,
+      "geslacht": "man",
+      "chronische_ziekte": "diabetes",
+      "penicilline_allergie": true
+    }
+  },
+  {
+    "vraag": "Ik heb diabetes type 2. Welke medicatie kan ik gebruiken?",
+    "patientinformatie": {
+      "leeftijd": 23,
+      "geslacht": "man",
+      "chronische_ziekte": "geen",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik spuit insuline maar blijf ontregeld. Wat zijn andere opties?",
+    "patientinformatie": {
+      "leeftijd": 39,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "COPD",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb overgewicht en voorstadium van diabetes. Wat kan ik nemen?",
+    "patientinformatie": {
+      "leeftijd": 54,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "geen",
+      "penicilline_allergie": true
+    }
+  },
+  {
+    "vraag": "Ik heb last van hypo's. Hoe kan ik mijn medicatie aanpassen?",
+    "patientinformatie": {
+      "leeftijd": 60,
+      "geslacht": "man",
+      "chronische_ziekte": "geen",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb schildklierproblemen. Moet ik levothyroxine slikken?",
+    "patientinformatie": {
+      "leeftijd": 34,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "COPD",
+      "penicilline_allergie": true
+    }
+  },
+  {
+    "vraag": "Ik heb trage schildklier. Welke dosering thyroxine is geschikt?",
+    "patientinformatie": {
+      "leeftijd": 55,
+      "geslacht": "man",
+      "chronische_ziekte": "geen",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb de ziekte van Addison. Wat moet ik hiervoor gebruiken?",
+    "patientinformatie": {
+      "leeftijd": 44,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "diabetes",
+      "penicilline_allergie": true
+    }
+  },
+  {
+    "vraag": "Ik heb migraine. Wat helpt tegen de aanvallen?",
+    "patientinformatie": {
+      "leeftijd": 26,
+      "geslacht": "vrouw",
+      "frequentie_aanvallen_per_maand": 5,
+      "aura": true,
+      "bijkomende_klachten": [
+        "misselijkheid",
+        "lichtgevoeligheid"
+      ]
+    }
+  },
+  {
+    "vraag": "Ik heb spanningshoofdpijn. Wat kan ik nemen?",
+    "patientinformatie": {
+      "leeftijd": 57,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "COPD",
+      "penicilline_allergie": true
+    }
+  },
+  {
+    "vraag": "Ik heb artrose. Wat is een goede pijnstiller?",
+    "patientinformatie": {
+      "leeftijd": 30,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "geen",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb reumatoïde artritis. Wat kan ik gebruiken aan ontstekingsremmers?",
+    "patientinformatie": {
+      "leeftijd": 38,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "geen",
+      "penicilline_allergie": true
+    }
+  },
+  {
+    "vraag": "Ik heb zenuwpijn. Wat is hiervoor geschikt?",
+    "patientinformatie": {
+      "leeftijd": 49,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "diabetes",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb rugpijn. Wat helpt hierbij?",
+    "patientinformatie": {
+      "leeftijd": 37,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "COPD",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb fibromyalgie. Zijn er medicijnen die kunnen helpen?",
+    "patientinformatie": {
+      "leeftijd": 42,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "diabetes",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb Parkinson. Welke medicatie kan ik gebruiken?",
+    "patientinformatie": {
+      "leeftijd": 30,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "geen",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb epilepsie. Wat is de juiste medicatie?",
+    "patientinformatie": {
+      "leeftijd": 61,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "diabetes",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb restless legs. Wat kan ik nemen?",
+    "patientinformatie": {
+      "leeftijd": 58,
+      "geslacht": "man",
+      "chronische_ziekte": "diabetes",
+      "penicilline_allergie": true
+    }
+  },
+  {
+    "vraag": "Ik voel me depressief. Wat kan ik slikken?",
+    "patientinformatie": {
+      "leeftijd": 23,
+      "geslacht": "man",
+      "chronische_ziekte": "diabetes",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb angstklachten. Welke medicijnen zijn geschikt?",
+    "patientinformatie": {
+      "leeftijd": 47,
+      "geslacht": "man",
+      "chronische_ziekte": "geen",
+      "penicilline_allergie": true
+    }
+  },
+  {
+    "vraag": "Ik heb paniekaanvallen. Wat kan ik nemen?",
+    "patientinformatie": {
+      "leeftijd": 60,
+      "geslacht": "man",
+      "chronische_ziekte": "geen",
+      "penicilline_allergie": true
+    }
+  },
+  {
+    "vraag": "Ik slaap slecht. Is er iets wat ik kan gebruiken?",
+    "patientinformatie": {
+      "leeftijd": 28,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "diabetes",
+      "penicilline_allergie": true
+    }
+  },
+  {
+    "vraag": "Ik heb ADHD. Welke medicatie helpt hierbij?",
+    "patientinformatie": {
+      "leeftijd": 31,
+      "geslacht": "man",
+      "chronische_ziekte": "geen",
+      "penicilline_allergie": true
+    }
+  },
+  {
+    "vraag": "Ik heb psychoseklachten. Wat kan ik hiervoor gebruiken?",
+    "patientinformatie": {
+      "leeftijd": 24,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "COPD",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb bipolaire stoornis. Welke medicatie past hierbij?",
+    "patientinformatie": {
+      "leeftijd": 67,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "geen",
+      "penicilline_allergie": true
+    }
+  },
+  {
+    "vraag": "Ik ben gestopt met antidepressiva en voel me slecht. Wat nu?",
+    "patientinformatie": {
+      "leeftijd": 38,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "diabetes",
+      "penicilline_allergie": true
+    }
+  },
+  {
+    "vraag": "Ik heb verslavingsproblemen. Zijn er medicijnen die kunnen helpen?",
+    "patientinformatie": {
+      "leeftijd": 48,
+      "geslacht": "man",
+      "chronische_ziekte": "diabetes",
+      "penicilline_allergie": true
+    }
+  },
+  {
+    "vraag": "Ik wil stoppen met roken. Wat kan ik gebruiken?",
+    "patientinformatie": {
+      "leeftijd": 22,
+      "geslacht": "man",
+      "chronische_ziekte": "diabetes",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb astma. Welke inhalatiemedicatie is nodig?",
+    "patientinformatie": {
+      "leeftijd": 62,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "COPD",
+      "penicilline_allergie": true
+    }
+  },
+  {
+    "vraag": "Ik heb COPD. Wat zijn geschikte medicijnen?",
+    "patientinformatie": {
+      "leeftijd": 43,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "diabetes",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb hooikoorts. Wat kan ik slikken of neusspray?",
+    "patientinformatie": {
+      "leeftijd": 53,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "geen",
+      "penicilline_allergie": true
+    }
+  },
+  {
+    "vraag": "Ik heb een allergische reactie. Welke medicatie helpt?",
+    "patientinformatie": {
+      "leeftijd": 23,
+      "geslacht": "man",
+      "chronische_ziekte": "geen",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb een verstopte neus. Wat kan ik gebruiken?",
+    "patientinformatie": {
+      "leeftijd": 24,
+      "geslacht": "man",
+      "chronische_ziekte": "diabetes",
+      "penicilline_allergie": true
+    }
+  },
+  {
+    "vraag": "Ik heb kortademigheid bij inspanning. Wat is de juiste behandeling?",
+    "patientinformatie": {
+      "leeftijd": 70,
+      "geslacht": "man",
+      "chronische_ziekte": "diabetes",
+      "penicilline_allergie": true
+    }
+  },
+  {
+    "vraag": "Ik heb bronchospasme. Wat helpt hiertegen?",
+    "patientinformatie": {
+      "leeftijd": 28,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "COPD",
+      "penicilline_allergie": true
+    }
+  },
+  {
+    "vraag": "Ik heb een rookershoest. Is er iets dat helpt?",
+    "patientinformatie": {
+      "leeftijd": 28,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "diabetes",
+      "penicilline_allergie": true
+    }
+  },
+  {
+    "vraag": "Ik heb keelpijn. Kan ik iets krijgen dat helpt?",
+    "patientinformatie": {
+      "leeftijd": 58,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "COPD",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb een aften in de mond. Wat kan ik gebruiken?",
+    "patientinformatie": {
+      "leeftijd": 54,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "COPD",
+      "penicilline_allergie": true
+    }
+  },
+  {
+    "vraag": "Ik heb een candidainfectie in de mond. Wat helpt?",
+    "patientinformatie": {
+      "leeftijd": 28,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "COPD",
+      "penicilline_allergie": true
+    }
+  },
+  {
+    "vraag": "Ik heb sinusitis. Wat is een geschikte behandeling?",
+    "patientinformatie": {
+      "leeftijd": 47,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "geen",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb een loopoor. Welke oordruppels zijn nodig?",
+    "patientinformatie": {
+      "leeftijd": 66,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "geen",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb oorpijn met koorts. Is antibiotica nodig?",
+    "patientinformatie": {
+      "leeftijd": 39,
+      "geslacht": "man",
+      "chronische_ziekte": "COPD",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb diarree. Wat kan ik gebruiken?",
+    "patientinformatie": {
+      "leeftijd": 68,
+      "geslacht": "man",
+      "chronische_ziekte": "diabetes",
+      "penicilline_allergie": true
+    }
+  },
+  {
+    "vraag": "Ik heb obstipatie. Wat helpt?",
+    "patientinformatie": {
+      "leeftijd": 46,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "diabetes",
+      "penicilline_allergie": true
+    }
+  },
+  {
+    "vraag": "Ik heb PDS. Welke medicatie is geschikt?",
+    "patientinformatie": {
+      "leeftijd": 55,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "COPD",
+      "penicilline_allergie": true
+    }
+  },
+  {
+    "vraag": "Ik heb leverklachten. Wat zijn de medicatieopties?",
+    "patientinformatie": {
+      "leeftijd": 38,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "diabetes",
+      "penicilline_allergie": true
+    }
+  },
+  {
+    "vraag": "Ik heb last van misselijkheid. Wat kan ik nemen?",
+    "patientinformatie": {
+      "leeftijd": 61,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "diabetes",
+      "penicilline_allergie": true
+    }
+  },
+  {
+    "vraag": "Ik heb een maagzweer. Wat is de juiste behandeling?",
+    "patientinformatie": {
+      "leeftijd": 70,
+      "geslacht": "man",
+      "chronische_ziekte": "COPD",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik gebruik NSAID’s. Moet ik maagbescherming gebruiken?",
+    "patientinformatie": {
+      "leeftijd": 30,
+      "geslacht": "man",
+      "chronische_ziekte": "geen",
+      "penicilline_allergie": true
+    }
+  },
+  {
+    "vraag": "Ik heb een helicobacter-infectie. Wat moet ik gebruiken?",
+    "patientinformatie": {
+      "leeftijd": 63,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "COPD",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb galstenen. Kan ik iets nemen tegen de pijn?",
+    "patientinformatie": {
+      "leeftijd": 44,
+      "geslacht": "man",
+      "chronische_ziekte": "diabetes",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb eczeem. Wat is de juiste zalf?",
+    "patientinformatie": {
+      "leeftijd": 56,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "COPD",
+      "penicilline_allergie": true
+    }
+  },
+  {
+    "vraag": "Ik heb psoriasis. Wat is hiervoor geschikt?",
+    "patientinformatie": {
+      "leeftijd": 41,
+      "geslacht": "man",
+      "locatie": [
+        "hoofdhuid",
+        "ellebogen"
+      ],
+      "jeuk": true,
+      "ernst": "matig"
+    }
+  },
+  {
+    "vraag": "Ik heb een allergische huiduitslag. Wat helpt?",
+    "patientinformatie": {
+      "leeftijd": 38,
+      "geslacht": "man",
+      "chronische_ziekte": "diabetes",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb acné. Wat is een effectieve behandeling?",
+    "patientinformatie": {
+      "leeftijd": 42,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "diabetes",
+      "penicilline_allergie": true
+    }
+  },
+  {
+    "vraag": "Ik heb rosacea. Welke crème of tabletten zijn geschikt?",
+    "patientinformatie": {
+      "leeftijd": 39,
+      "geslacht": "man",
+      "chronische_ziekte": "COPD",
+      "penicilline_allergie": true
+    }
+  },
+  {
+    "vraag": "Ik heb een insectenbeet met zwelling. Wat kan ik gebruiken?",
+    "patientinformatie": {
+      "leeftijd": 70,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "diabetes",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb schimmel tussen mijn tenen. Wat helpt?",
+    "patientinformatie": {
+      "leeftijd": 30,
+      "geslacht": "man",
+      "chronische_ziekte": "geen",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb een wrat. Wat is geschikt om te smeren?",
+    "patientinformatie": {
+      "leeftijd": 27,
+      "geslacht": "man",
+      "chronische_ziekte": "diabetes",
+      "penicilline_allergie": true
+    }
+  },
+  {
+    "vraag": "Ik heb netelroos. Wat kan ik gebruiken?",
+    "patientinformatie": {
+      "leeftijd": 57,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "COPD",
+      "penicilline_allergie": true
+    }
+  },
+  {
+    "vraag": "Ik heb urineverlies. Wat kan ik gebruiken?",
+    "patientinformatie": {
+      "leeftijd": 28,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "COPD",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb overactieve blaas. Is er medicatie voor?",
+    "patientinformatie": {
+      "leeftijd": 29,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "COPD",
+      "penicilline_allergie": true
+    }
+  },
+  {
+    "vraag": "Ik heb een prostaatvergroting. Wat kan ik gebruiken?",
+    "patientinformatie": {
+      "leeftijd": 27,
+      "geslacht": "man",
+      "chronische_ziekte": "diabetes",
+      "penicilline_allergie": true
+    }
+  },
+  {
+    "vraag": "Ik heb menstruatiepijn. Wat helpt?",
+    "patientinformatie": {
+      "leeftijd": 44,
+      "geslacht": "man",
+      "chronische_ziekte": "geen",
+      "penicilline_allergie": true
+    }
+  },
+  {
+    "vraag": "Ik heb hevige menstruaties. Wat is een geschikte behandeling?",
+    "patientinformatie": {
+      "leeftijd": 35,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "diabetes",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik wil anticonceptie gebruiken. Wat zijn de opties?",
+    "patientinformatie": {
+      "leeftijd": 58,
+      "geslacht": "man",
+      "chronische_ziekte": "diabetes",
+      "penicilline_allergie": true
+    }
+  },
+  {
+    "vraag": "Ik wil stoppen met de pil. Moet ik iets anders nemen?",
+    "patientinformatie": {
+      "leeftijd": 37,
+      "geslacht": "man",
+      "chronische_ziekte": "diabetes",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb overgangsklachten. Wat kan ik gebruiken?",
+    "patientinformatie": {
+      "leeftijd": 23,
+      "geslacht": "man",
+      "chronische_ziekte": "geen",
+      "penicilline_allergie": true
+    }
+  },
+  {
+    "vraag": "Ik heb een vaginale infectie. Wat helpt?",
+    "patientinformatie": {
+      "leeftijd": 50,
+      "geslacht": "man",
+      "chronische_ziekte": "COPD",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb erectieproblemen. Wat kan ik nemen?",
+    "patientinformatie": {
+      "leeftijd": 33,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "COPD",
+      "penicilline_allergie": true
+    }
+  },
+  {
+    "vraag": "Ik heb een bacteriële huidinfectie. Welke antibiotica zijn nodig?",
+    "patientinformatie": {
+      "leeftijd": 30,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "geen",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb spruw. Wat helpt tegen de schimmel in mijn mond?",
+    "patientinformatie": {
+      "leeftijd": 33,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "COPD",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb gordelroos. Wat kan ik hiervoor innemen?",
+    "patientinformatie": {
+      "leeftijd": 26,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "geen",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb wratten door HPV. Wat kan ik gebruiken?",
+    "patientinformatie": {
+      "leeftijd": 69,
+      "geslacht": "man",
+      "chronische_ziekte": "geen",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb last van een schimmelnagel. Wat is een geschikte behandeling?",
+    "patientinformatie": {
+      "leeftijd": 51,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "diabetes",
+      "penicilline_allergie": true
+    }
+  },
+  {
+    "vraag": "Ik heb voetschimmel. Wat kan ik gebruiken?",
+    "patientinformatie": {
+      "leeftijd": 56,
+      "geslacht": "man",
+      "chronische_ziekte": "COPD",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb luizen. Wat is een goede medicamenteuze behandeling?",
+    "patientinformatie": {
+      "leeftijd": 60,
+      "geslacht": "man",
+      "chronische_ziekte": "COPD",
+      "penicilline_allergie": true
+    }
+  },
+  {
+    "vraag": "Ik heb een lintworm. Wat is een geschikt medicijn?",
+    "patientinformatie": {
+      "leeftijd": 27,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "diabetes",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb malaria opgelopen. Wat is de aanbevolen behandeling?",
+    "patientinformatie": {
+      "leeftijd": 56,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "diabetes",
+      "penicilline_allergie": true
+    }
+  },
+  {
+    "vraag": "Ik ga op reis naar een risicogebied. Welke malaria-profylaxe heb ik nodig?",
+    "patientinformatie": {
+      "leeftijd": 66,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "geen",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb vaginale droogheid. Wat kan ik hiervoor gebruiken?",
+    "patientinformatie": {
+      "leeftijd": 51,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "geen",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb terugkerende blaasontstekingen. Kan ik iets preventiefs nemen?",
+    "patientinformatie": {
+      "leeftijd": 27,
+      "geslacht": "vrouw",
+      "koorts": false,
+      "pijn_bij_plassen": true,
+      "zwanger": false,
+      "eerder_blaasontsteking": true
+    }
+  },
+  {
+    "vraag": "Ik heb pijn bij het vrijen. Wat kan ik daarvoor gebruiken?",
+    "patientinformatie": {
+      "leeftijd": 63,
+      "geslacht": "man",
+      "chronische_ziekte": "geen",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb pijnlijke menstruaties. Wat is effectieve pijnstilling?",
+    "patientinformatie": {
+      "leeftijd": 46,
+      "geslacht": "man",
+      "chronische_ziekte": "geen",
+      "penicilline_allergie": true
+    }
+  },
+  {
+    "vraag": "Ik heb endometriose. Welke medicijnen helpen bij de klachten?",
+    "patientinformatie": {
+      "leeftijd": 55,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "geen",
+      "penicilline_allergie": true
+    }
+  },
+  {
+    "vraag": "Ik heb PCOS. Wat zijn mijn medicatieopties?",
+    "patientinformatie": {
+      "leeftijd": 46,
+      "geslacht": "man",
+      "chronische_ziekte": "diabetes",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb een vroege overgang. Wat kan ik innemen?",
+    "patientinformatie": {
+      "leeftijd": 28,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "geen",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb borstvoedingsproblemen. Is medicatie nodig?",
+    "patientinformatie": {
+      "leeftijd": 64,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "geen",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb verhoogde prolactine. Wat kan ik slikken?",
+    "patientinformatie": {
+      "leeftijd": 29,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "geen",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb PMS-klachten. Wat helpt tegen de stemmingswisselingen?",
+    "patientinformatie": {
+      "leeftijd": 32,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "COPD",
+      "penicilline_allergie": true
+    }
+  },
+  {
+    "vraag": "Ik heb veel acne tijdens de menstruatie. Is er een hormoonbehandeling mogelijk?",
+    "patientinformatie": {
+      "leeftijd": 37,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "diabetes",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik wil een morning-afterpil. Welke kan ik gebruiken?",
+    "patientinformatie": {
+      "leeftijd": 25,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "COPD",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb een vaginale bacteriële infectie. Welke medicatie is geschikt?",
+    "patientinformatie": {
+      "leeftijd": 43,
+      "geslacht": "man",
+      "chronische_ziekte": "COPD",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb een schimmelinfectie op mijn huid. Welke crème moet ik gebruiken?",
+    "patientinformatie": {
+      "leeftijd": 51,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "diabetes",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb net een tand getrokken. Moet ik antibiotica gebruiken?",
+    "patientinformatie": {
+      "leeftijd": 53,
+      "geslacht": "man",
+      "chronische_ziekte": "geen",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb kiespijn na een wortelkanaalbehandeling. Wat helpt?",
+    "patientinformatie": {
+      "leeftijd": 48,
+      "geslacht": "man",
+      "chronische_ziekte": "diabetes",
+      "penicilline_allergie": true
+    }
+  },
+  {
+    "vraag": "Ik heb tandvleesontsteking. Is er een mondspoelmiddel dat werkt?",
+    "patientinformatie": {
+      "leeftijd": 56,
+      "geslacht": "man",
+      "chronische_ziekte": "COPD",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb last van tandenknarsen. Kan ik spierverslappers gebruiken?",
+    "patientinformatie": {
+      "leeftijd": 69,
+      "geslacht": "man",
+      "chronische_ziekte": "geen",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb een plotselinge allergische reactie gehad. Heb ik een EpiPen nodig?",
+    "patientinformatie": {
+      "leeftijd": 48,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "COPD",
+      "penicilline_allergie": true
+    }
+  },
+  {
+    "vraag": "Ik heb atopisch eczeem. Wat is de juiste onderhoudsbehandeling?",
+    "patientinformatie": {
+      "leeftijd": 35,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "diabetes",
+      "penicilline_allergie": true
+    }
+  },
+  {
+    "vraag": "Ik heb zonneallergie. Wat kan ik preventief gebruiken?",
+    "patientinformatie": {
+      "leeftijd": 45,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "COPD",
+      "penicilline_allergie": true
+    }
+  },
+  {
+    "vraag": "Ik heb brandwonden. Welke zalf kan ik gebruiken?",
+    "patientinformatie": {
+      "leeftijd": 48,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "COPD",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb psoriasis aan mijn hoofdhuid. Wat is geschikte medicatie?",
+    "patientinformatie": {
+      "leeftijd": 41,
+      "geslacht": "man",
+      "locatie": [
+        "hoofdhuid",
+        "ellebogen"
+      ],
+      "jeuk": true,
+      "ernst": "matig"
+    }
+  },
+  {
+    "vraag": "Ik heb haaruitval. Is er medicatie die kan helpen?",
+    "patientinformatie": {
+      "leeftijd": 28,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "COPD",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb hyperpigmentatie. Wat kan ik hiervoor gebruiken?",
+    "patientinformatie": {
+      "leeftijd": 24,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "COPD",
+      "penicilline_allergie": true
+    }
+  },
+  {
+    "vraag": "Ik heb een koortslip. Wat helpt hiertegen?",
+    "patientinformatie": {
+      "leeftijd": 43,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "COPD",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb een vaginale jeuk. Welke zalf of medicatie is geschikt?",
+    "patientinformatie": {
+      "leeftijd": 56,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "COPD",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb een bacteriële vaginose. Wat is de juiste behandeling?",
+    "patientinformatie": {
+      "leeftijd": 68,
+      "geslacht": "man",
+      "chronische_ziekte": "diabetes",
+      "penicilline_allergie": true
+    }
+  },
+  {
+    "vraag": "Ik heb een schimmelinfectie aan de penis. Wat helpt?",
+    "patientinformatie": {
+      "leeftijd": 70,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "geen",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb urethritis. Welke behandeling is geschikt?",
+    "patientinformatie": {
+      "leeftijd": 54,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "geen",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb vaak een opgeblazen gevoel. Wat helpt daartegen?",
+    "patientinformatie": {
+      "leeftijd": 56,
+      "geslacht": "man",
+      "chronische_ziekte": "COPD",
+      "penicilline_allergie": true
+    }
+  },
+  {
+    "vraag": "Ik heb galblaasproblemen. Wat kan ik tegen de pijn nemen?",
+    "patientinformatie": {
+      "leeftijd": 28,
+      "geslacht": "man",
+      "chronische_ziekte": "geen",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb een nieraandoening. Is er medicatie nodig voor de eiwituitscheiding?",
+    "patientinformatie": {
+      "leeftijd": 43,
+      "geslacht": "man",
+      "chronische_ziekte": "geen",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb nierstenen. Wat helpt tegen de pijn?",
+    "patientinformatie": {
+      "leeftijd": 42,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "geen",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb jicht. Welke medicijnen kan ik gebruiken bij een aanval?",
+    "patientinformatie": {
+      "leeftijd": 69,
+      "geslacht": "man",
+      "chronische_ziekte": "geen",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb een verhoogd urinezuurgehalte. Wat kan ik preventief nemen?",
+    "patientinformatie": {
+      "leeftijd": 39,
+      "geslacht": "man",
+      "chronische_ziekte": "geen",
+      "penicilline_allergie": true
+    }
+  },
+  {
+    "vraag": "Ik heb lupus. Wat is een geschikte onderhoudsmedicatie?",
+    "patientinformatie": {
+      "leeftijd": 68,
+      "geslacht": "man",
+      "chronische_ziekte": "diabetes",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb de ziekte van Crohn. Wat is de standaardbehandeling?",
+    "patientinformatie": {
+      "leeftijd": 66,
+      "geslacht": "man",
+      "chronische_ziekte": "diabetes",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb colitis ulcerosa. Wat zijn mijn medicatieopties?",
+    "patientinformatie": {
+      "leeftijd": 27,
+      "geslacht": "man",
+      "chronische_ziekte": "diabetes",
+      "penicilline_allergie": true
+    }
+  },
+  {
+    "vraag": "Ik heb lactose-intolerantie. Is er medicatie die ik kan nemen bij een foutje?",
+    "patientinformatie": {
+      "leeftijd": 68,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "geen",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb coeliakie. Moet ik nog iets aanvullends gebruiken?",
+    "patientinformatie": {
+      "leeftijd": 27,
+      "geslacht": "man",
+      "chronische_ziekte": "diabetes",
+      "penicilline_allergie": true
+    }
+  },
+  {
+    "vraag": "Ik heb een B12-tekort. Moet ik injecties of tabletten gebruiken?",
+    "patientinformatie": {
+      "leeftijd": 35,
+      "geslacht": "man",
+      "chronische_ziekte": "COPD",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb ijzertekort. Welke ijzertabletten zijn het best?",
+    "patientinformatie": {
+      "leeftijd": 56,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "COPD",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb een vitamine D-tekort. Welke dosering moet ik nemen?",
+    "patientinformatie": {
+      "leeftijd": 46,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "diabetes",
+      "penicilline_allergie": true
+    }
+  },
+  {
+    "vraag": "Ik heb bloedarmoede. Wat is de juiste behandeling?",
+    "patientinformatie": {
+      "leeftijd": 61,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "COPD",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb ADHD bij volwassenen. Welke medicatie werkt goed?",
+    "patientinformatie": {
+      "leeftijd": 25,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "COPD",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb borderlineklachten. Is er medicatie die kan helpen?",
+    "patientinformatie": {
+      "leeftijd": 36,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "diabetes",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb autisme en veel onrust. Kan medicatie helpen?",
+    "patientinformatie": {
+      "leeftijd": 59,
+      "geslacht": "man",
+      "chronische_ziekte": "diabetes",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb nachtmerries door PTSS. Wat kan ik daarvoor krijgen?",
+    "patientinformatie": {
+      "leeftijd": 57,
+      "geslacht": "man",
+      "chronische_ziekte": "diabetes",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb manische klachten. Welke stemmingsstabilisator past daarbij?",
+    "patientinformatie": {
+      "leeftijd": 68,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "geen",
+      "penicilline_allergie": true
+    }
+  },
+  {
+    "vraag": "Ik heb cognitieve achteruitgang. Zijn er medicijnen tegen dementie?",
+    "patientinformatie": {
+      "leeftijd": 23,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "geen",
+      "penicilline_allergie": true
+    }
+  },
+  {
+    "vraag": "Ik heb overmatig zweten. Wat helpt hiertegen?",
+    "patientinformatie": {
+      "leeftijd": 50,
+      "geslacht": "man",
+      "chronische_ziekte": "COPD",
+      "penicilline_allergie": true
+    }
+  },
+  {
+    "vraag": "Ik heb slaapproblemen door ploegendienst. Wat kan ik gebruiken?",
+    "patientinformatie": {
+      "leeftijd": 21,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "geen",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb ochtendmisselijkheid in de zwangerschap. Wat mag ik gebruiken?",
+    "patientinformatie": {
+      "leeftijd": 52,
+      "geslacht": "man",
+      "chronische_ziekte": "COPD",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb zwangerschapsdiabetes. Welke behandeling is nodig?",
+    "patientinformatie": {
+      "leeftijd": 70,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "geen",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb hoge bloeddruk tijdens de zwangerschap. Wat is veilig?",
+    "patientinformatie": {
+      "leeftijd": 54,
+      "geslacht": "man",
+      "gemeten_bloeddruk": "160/95",
+      "diabetes": false,
+      "roken": true,
+      "familiaire_anamnese": true
+    }
+  },
+  {
+    "vraag": "Ik heb een blaasontsteking tijdens de zwangerschap. Wat mag ik gebruiken?",
+    "patientinformatie": {
+      "leeftijd": 27,
+      "geslacht": "vrouw",
+      "koorts": false,
+      "pijn_bij_plassen": true,
+      "zwanger": false,
+      "eerder_blaasontsteking": true
+    }
+  },
+  {
+    "vraag": "Ik heb pijn na een operatie. Wat kan ik veilig nemen?",
+    "patientinformatie": {
+      "leeftijd": 33,
+      "geslacht": "man",
+      "chronische_ziekte": "diabetes",
+      "penicilline_allergie": true
+    }
+  },
+  {
+    "vraag": "Ik heb hevige pijn door kanker. Wat is een geschikte pijnstiller?",
+    "patientinformatie": {
+      "leeftijd": 50,
+      "geslacht": "man",
+      "chronische_ziekte": "geen",
+      "penicilline_allergie": true
+    }
+  },
+  {
+    "vraag": "Ik heb kanker en last van misselijkheid door chemo. Wat kan ik slikken?",
+    "patientinformatie": {
+      "leeftijd": 51,
+      "geslacht": "man",
+      "chronische_ziekte": "geen",
+      "penicilline_allergie": true
+    }
+  },
+  {
+    "vraag": "Ik heb neuropathie door chemotherapie. Welke medicatie helpt?",
+    "patientinformatie": {
+      "leeftijd": 22,
+      "geslacht": "man",
+      "chronische_ziekte": "diabetes",
+      "penicilline_allergie": true
+    }
+  },
+  {
+    "vraag": "Ik heb een hersenschudding gehad. Wat mag ik nemen tegen hoofdpijn?",
+    "patientinformatie": {
+      "leeftijd": 55,
+      "geslacht": "man",
+      "chronische_ziekte": "geen",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb een been gebroken. Wat is een geschikte pijnstiller voor langere tijd?",
+    "patientinformatie": {
+      "leeftijd": 36,
+      "geslacht": "man",
+      "chronische_ziekte": "geen",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb een spierscheur. Wat helpt tegen de pijn en ontsteking?",
+    "patientinformatie": {
+      "leeftijd": 34,
+      "geslacht": "man",
+      "chronische_ziekte": "COPD",
+      "penicilline_allergie": true
+    }
+  },
+  {
+    "vraag": "Ik heb een allergie voor penicilline. Wat kan ik gebruiken als alternatief?",
+    "patientinformatie": {
+      "leeftijd": 37,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "geen",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb een zeldzame ziekte waarvoor ik dure medicatie nodig heb. Hoe werkt dat?",
+    "patientinformatie": {
+      "leeftijd": 21,
+      "geslacht": "man",
+      "chronische_ziekte": "COPD",
+      "penicilline_allergie": true
+    }
+  },
+  {
+    "vraag": "Ik wil een recept voor reisziekte. Wat is geschikt voor kinderen?",
+    "patientinformatie": {
+      "leeftijd": 26,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "diabetes",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik ga vliegen en heb tromboserisico. Wat moet ik slikken?",
+    "patientinformatie": {
+      "leeftijd": 54,
+      "geslacht": "man",
+      "chronische_ziekte": "geen",
+      "penicilline_allergie": true
+    }
+  },
+  {
+    "vraag": "Ik ben vaak wagenziek. Wat helpt echt goed?",
+    "patientinformatie": {
+      "leeftijd": 20,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "COPD",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb een vliegangst. Kan ik iets kalmerends krijgen?",
+    "patientinformatie": {
+      "leeftijd": 52,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "diabetes",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb last van examenvrees. Wat kan ik tijdelijk nemen?",
+    "patientinformatie": {
+      "leeftijd": 37,
+      "geslacht": "man",
+      "chronische_ziekte": "geen",
+      "penicilline_allergie": true
+    }
+  },
+  {
+    "vraag": "Ik heb spreekangst. Kan ik hier medicatie voor gebruiken?",
+    "patientinformatie": {
+      "leeftijd": 52,
+      "geslacht": "man",
+      "chronische_ziekte": "COPD",
+      "penicilline_allergie": true
+    }
+  },
+  {
+    "vraag": "Ik heb problemen met agressieregulatie. Helpt medicatie?",
+    "patientinformatie": {
+      "leeftijd": 62,
+      "geslacht": "man",
+      "chronische_ziekte": "geen",
+      "penicilline_allergie": true
+    }
+  },
+  {
+    "vraag": "Ik heb moeite met stoppen van cannabis. Kan medicatie ondersteunen?",
+    "patientinformatie": {
+      "leeftijd": 64,
+      "geslacht": "man",
+      "chronische_ziekte": "COPD",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb overgewicht. Is er medicatie die kan helpen met afvallen?",
+    "patientinformatie": {
+      "leeftijd": 30,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "COPD",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb last van een ticstoornis. Kan ik hiervoor iets gebruiken?",
+    "patientinformatie": {
+      "leeftijd": 46,
+      "geslacht": "man",
+      "chronische_ziekte": "geen",
+      "penicilline_allergie": true
+    }
+  },
+  {
+    "vraag": "Ik heb een zweetvoetprobleem. Wat kan ik hiervoor gebruiken?",
+    "patientinformatie": {
+      "leeftijd": 37,
+      "geslacht": "man",
+      "chronische_ziekte": "diabetes",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb een jetlag. Wat kan ik nemen om beter te slapen?",
+    "patientinformatie": {
+      "leeftijd": 53,
+      "geslacht": "man",
+      "chronische_ziekte": "COPD",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb last van spierkrampen. Is er iets wat helpt?",
+    "patientinformatie": {
+      "leeftijd": 28,
+      "geslacht": "man",
+      "chronische_ziekte": "geen",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb vaak verkoudheid en wil iets ter ondersteuning. Wat kan ik gebruiken?",
+    "patientinformatie": {
+      "leeftijd": 31,
+      "geslacht": "man",
+      "chronische_ziekte": "diabetes",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb hooikoorts én astma. Wat is een goede gecombineerde behandeling?",
+    "patientinformatie": {
+      "leeftijd": 67,
+      "geslacht": "man",
+      "chronische_ziekte": "diabetes",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb brandend maagzuur ondanks dieet. Wat kan ik aanvullend slikken?",
+    "patientinformatie": {
+      "leeftijd": 45,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "diabetes",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb last van hyperventilatie. Wat kan ik gebruiken bij acute aanvallen?",
+    "patientinformatie": {
+      "leeftijd": 25,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "diabetes",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb een chronische hoest. Kan ik hier iets voor krijgen?",
+    "patientinformatie": {
+      "leeftijd": 47,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "diabetes",
+      "penicilline_allergie": true
+    }
+  },
+  {
+    "vraag": "Ik heb slikproblemen. Zijn er medicijnen om de speekselproductie te verminderen?",
+    "patientinformatie": {
+      "leeftijd": 43,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "geen",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb spastische spieren door MS. Wat kan ik nemen?",
+    "patientinformatie": {
+      "leeftijd": 43,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "geen",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb MS. Wat zijn mijn onderhoudsmedicijnen?",
+    "patientinformatie": {
+      "leeftijd": 62,
+      "geslacht": "man",
+      "chronische_ziekte": "diabetes",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb een vergrote schildklier. Moet ik iets innemen?",
+    "patientinformatie": {
+      "leeftijd": 21,
+      "geslacht": "man",
+      "chronische_ziekte": "COPD",
+      "penicilline_allergie": false
+    }
+  },
+  {
+    "vraag": "Ik heb een verhoogde calciumspiegel. Wat kan ik gebruiken om dat te verlagen?",
+    "patientinformatie": {
+      "leeftijd": 58,
+      "geslacht": "vrouw",
+      "chronische_ziekte": "COPD",
+      "penicilline_allergie": false
+    }
+  }
 ]
