@@ -7,9 +7,15 @@
 % topics.
 
 \subsection{Related Work}
-
-Interesting article in \citep{kang2024r} about guardrails based on probabilistic reasoning.
+Guardrails for LLMs in the medical domain have been explored in various studies.
+The article by \citep{kang2024r} discusses a complex guardrail that combine learning and reasoning to ensure safe and correct outputs from LLMs.
+The probability of unsafety is estimated for multiple categories based on a trained model for reasoning about safety.
+In the reasoning phase the probability of unsafety is used to determine whether the output is safe or not using a weighted sum.
+The reasoning approach provides an interesting perspective on how to ensure safety in LLM outputs, but it does not guarantee correctness in the medical domain.
+Reasoning about safety categories did provide a significantly more effective guardrail compared to more simplistic models.
+In \citep{hsu2025medplan} a more systematic approach of reasoning about medical plans is presented.
+The guardrail takes the approach of SOAP (Subjective, Objective, Assessment, Plan) to generate medical plans.
+This approach is more focused on the planning aspect of medical care, rather than directly addressing correctness in medication-related queries.
+It is interesting to see that the approach reflects the medical practice of SOAP, which is a common method used by healthcare professionals to document patient care.
 
 Article that discusses how to get to safe use of LLMs in \citep{wu2024medical}.
-
-Article about plan generation for LLMs in \citep{hsu2025medplan}.
