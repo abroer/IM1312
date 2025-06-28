@@ -5,7 +5,7 @@
     "recept": "Rp. Amoxicilline 500mg capsules\ndtd. No. 21\nS. Driemaal daags 1 capsule gedurende 7 dagen.",
     "medische_vraag": "Ik heb een keelontsteking. Heb ik antibiotica nodig?",
     "patientinformatie": "Patiënt is 34 jaar, vrouw, heeft koorts, 3 dagen klachten, pijn bij slikken, tonsillen met pus, geen hoesten, geen penicilline allergie.",
-    "correct": "?"
+    "correct": "False"
   },
   {
     "medicijn": "nitrofurantoïne",
@@ -13,7 +13,7 @@
     "recept": "Rp. Nitrofurantoïne 100mg capsules\ndtd. No. 20\nS. 2 maal daags 1 capsule gedurende 5 dagen",
     "medische_vraag": "Ik heb blaasontstekingklachten. Wat kan ik daartegen nemen?",
     "patientinformatie": "patiënt is 27 jaar, vrouw, niet zwanger, geen koorts, wel pijn bij plassen, heeft eerder een blaasontsteking gehad",
-    "correct": "?"
+    "correct": "True"
   },
   {
     "medicijn": "Amoxicilline",
@@ -21,7 +21,7 @@
     "recept": "Rp. Amoxicilline 500mg capsules\ndtd. No. 21\nS. Driemaal daags 1 capsule gedurende 7 dagen.",
     "medische_vraag": "Ik heb een longontsteking. Welke antibiotica zijn geschikt?",
     "patientinformatie": "Patiënt, man, 71 jaar oud met COPD en koorts (CRB65 score 1), heeft een longontsteking en geen penicilline allergie.",
-    "correct": "?"
+    "correct": "True"
   },
   {
     "medicijn": "Clindamycine",
@@ -29,15 +29,15 @@
     "recept": "Rp. Clindamycine 300mg capsules\ndtd. No. XVI\nS. Tweemaal daags 1 capsule gedurende 8 dagen.",
     "medische_vraag": "Ik heb wondinfectieverschijnselen. Welk antibioticum is nodig?",
     "patientinformatie": "Patiënt, man, 56 jaar, geen chronische ziekte, penicilline allergie",
-    "correct": "?"
+    "correct": "True"
   },
   {
     "medicijn": "Amoxicilline",
     "categorie": "Antibioticum",
     "recept": "Rp. Amoxicilline 500mg capsules\ndtd. No. 21\nS. Driemaal daags 1 capsule gedurende 7 dagen.",
-    "medische_vraag": "Ik heb een tandvleesontsteking. Kan ik hier iets voor slikken?",
-    "patientinformatie": "Patiënt is een 69-jarige vrouw zonder chronische ziekten en zonder penicilline-allergie.",
-    "correct": "?"
+    "medische_vraag": "Ik heb een lichte tandvleesontsteking. Kan ik hier iets voor slikken?",
+    "patientinformatie": "Patiënt is een 69-jarige vrouw zonder chronische ziekten en zonder penicilline-allergie, is niet ziek en heeft geen koorts.",
+    "correct": "False"
   },
   {
     "medicijn": "Fluconazol",
@@ -45,23 +45,23 @@
     "recept": "Rp. Fluconazol 150mg capsule\ndtd. No. 1\nS. 1 capsule oraal, eenmalig.",
     "medische_vraag": "Ik heb een vaginale schimmelinfectie. Wat helpt hiertegen?",
     "patientinformatie": "Patiënt is een 32-jarige vrouw met een vaginale schimmelinfectie, ervaart jeuk en witte afscheiding, en heeft dit eerder gehad.",
-    "correct": "?"
+    "correct": "True"
   },
   {
     "medicijn": "Azitromycine",
     "categorie": "Antibioticum",
     "recept": "Rp. Azitromycine 1g tablet\ndtd. No. 1\nS. Eenmalig 1000mg oraal innemen.",
-    "medische_vraag": "Ik heb een SOA. Welke behandeling is nodig?",
+    "medische_vraag": "Ik heb Chlamydia, welke behandeling is nodig?",
     "patientinformatie": "Patiënt is een 31-jarige vrouw met diabetes en geen penicilline-allergie.",
-    "correct": "?"
+    "correct": "False"
   },
   {
     "medicijn": "Fusidinezuur",
     "categorie": "Antibioticum",
     "recept": "Rp. Fusidinezuur 2% crème\ndtd. No. 1 tube\nS. 3 maal daags dun aanbrengen gedurende 7 dagen.",
     "medische_vraag": "Ik heb krentenbaard (impetigo). Wat kan ik gebruiken?",
-    "patientinformatie": "Patiënt, 31 jaar, vrouw, diabetes, geen penicilline allergie",
-    "correct": "?"
+    "patientinformatie": "Patiënt, 3 jaar ",
+    "correct": "True"
   },
   {
     "medicijn": "Doxycycline",
@@ -69,15 +69,15 @@
     "recept": "Rp. Doxycycline 100mg capsules\ndtd. No. 14\nS. 2 capsules ineens op dag 1, daarna 1 capsule per dag gedurende 13 dagen. Niet gebruiken bij penicilline allergie.",
     "medische_vraag": "Ik heb een tekenbeet met rode kring. Heb ik antibiotica nodig?",
     "patientinformatie": "Patiënt, man, 60 jaar, COPD, penicilline allergie",
-    "correct": "?"
+    "correct": "True"
   },
   {
     "medicijn": "Ciprofloxacine",
     "categorie": "Antibioticum oordruppels",
     "recept": "Rp. Ciprofloxacine 0.3% oordruppels\ndtd. No. 1\nS. 3 maal daags 3 druppels in het aangedane oor gedurende 7 dagen. Niet gebruiken vanwege penicilline allergie.",
-    "medische_vraag": "Mijn kind heeft oorontsteking. Welke druppels of medicijnen zijn geschikt?",
-    "patientinformatie": "Leeftijd: 51, Geslacht: man, Chronische ziekte: geen, Penicilline allergie: ja",
-    "correct": "?"
+    "medische_vraag": "Mijn kind heeft dubbele oorontsteking. Welke druppels of medicijnen zijn geschikt?",
+    "patientinformatie": "Leeftijd: 5, Geslacht: man, Chronische ziekte: geen, Penicilline allergie: ja",
+    "correct": "False"
   },
   {
     "medicijn": "Chlooramfenicol",
