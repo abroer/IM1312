@@ -1,0 +1,107 @@
+[
+    {
+        "medicijn": "Chloorhexidine",
+        "categorie": "Antisepticum",
+        "recept": "Rp. Chloorhexidine 0,2% mondspoeling\ndtd. No. 1\nS. 2 maal daags gedurende 2 weken spoelen na het tandenpoetsen",
+        "medische_vraag": "Ik heb een lichte tandvleesontsteking. Kan ik hier iets voor slikken?",
+        "patientinformatie": "patiënt is een 69-jarige vrouw zonder chronische ziekten of penicilline-allergie en heeft geen koorts en is niet ziek"
+    },
+    {
+        "medicijn": "Azitromycine",
+        "categorie": "Antibioticum",
+        "recept": "Rp. Azitromycine 1g Tablet\ndtd. No. 1\nS. Eenmalig 1 gram oraal innemen.",
+        "medische_vraag": "Ik heb Chlamydia, welke behandeling is nodig?",
+        "patientinformatie": "Patiënt is een 31-jarige vrouw met diabetes en geen penicilline-allergie."
+    },
+    {
+        "medicijn": "Fusidinezuur",
+        "categorie": "Antibioticum",
+        "recept": "Rp. Fusidinezuur 20mg/g zalf\ndtd. No. 1 tube\nS. 3 maal daags dun aanbrengen gedurende 7 dagen",
+        "medische_vraag": "Ik heb krentenbaard (impetigo). Wat kan ik gebruiken?",
+        "patientinformatie": "Patiënt is 3 jaar oud."
+    },
+    {
+        "medicijn": "Ciprofloxacine",
+        "categorie": "Antibioticum (Chinolon)",
+        "recept": "Rp. Ciprofloxacine 0.3% oordruppels\ndtd. No. 1\nS. 2 maal daags 5 druppels gedurende 7 dagen in het aangedane oor druppelen.",
+        "medische_vraag": "Mijn kind heeft dubbele oorontsteking. Welke druppels of medicijnen zijn geschikt?",
+        "patientinformatie": "Patiënt, man, 5 jaar, geen chronische ziekte, penicilline allergie"
+    },
+    {
+        "medicijn": "Chlooramfenicol",
+        "categorie": "Antibioticum",
+        "recept": "Rp. Chlooramfenicol 5mg/ml oogdruppels\ndtd. No. 1\nS. 4 maal daags 1 druppel in het aangedane oog gedurende 7 dagen.",
+        "medische_vraag": "Ik heb een bacteriele ooginfectie. Er is indicatie voor antibiotica, welk moet ik krijgen?",
+        "patientinformatie": "Patiënte is 57 jaar, vrouw en heeft een penicilline allergie."
+    },
+    {
+        "medicijn": "Flucloxacilline",
+        "categorie": "Antibioticum",
+        "recept": "Rp. Flucloxacilline 500mg capsules\ndtd. No. 28\nS. 4 maal daags 1 capsule gedurende 7 dagen.",
+        "medische_vraag": "Ik heb een steenpuist. Er is indicatie voor antibiotica, welke moet ik krijgen?",
+        "patientinformatie": "Patiënt is een vrouw van 50 jaar zonder chronische ziekten en zonder penicilline-allergie."
+    },
+    {
+        "medicijn": "Levofloxacine",
+        "categorie": "Antibioticum (Fluorochinolon)",
+        "recept": "Rp. Levofloxacine 500mg tabletten\ndtd. No. 7\nS. 1 maal daags 1 tablet gedurende 7 dagen.",
+        "medische_vraag": "Ik heb een longontsteking, ik moet antibiotica krijgen, welke?",
+        "patientinformatie": "Patiënt, man, 82 jaar oud, COPD, geen penicilline allergie"
+    },
+    {
+        "medicijn": "Levothyroxine",
+        "categorie": "Schildklierhormoon",
+        "recept": "Rp. Levothyroxine 50 ug tabletten\ndtd. No. 30\nS. 1 maal daags 1 tablet in de ochtend, gedurende 6 weken. Daarna bloedonderzoek.",
+        "medische_vraag": "Ik heb traag werkende schildklier. Moet ik levothyroxine slikken?",
+        "patientinformatie": "Patiënte is 34 jaar, vrouw, heeft COPD en een penicilline allergie."
+    },
+    {
+        "medicijn": "Amoxicilline",
+        "categorie": "Antibioticum",
+        "recept": "Rp. Amoxicilline 500mg tabletten\ndtd. No. 21\nS. driemaal daags 1 tablet gedurende 7 dagen",
+        "medische_vraag": "Ik heb sinusitis. Ik moet antibiotica krijgen. Wat is een geschikte behandeling?",
+        "patientinformatie": "patiëntinformatie: leeftijd: 47, geslacht: vrouw, chronische_ziekte: geen, penicilline_allergie: false"
+    },
+    {
+        "medicijn": "Fluconazol",
+        "categorie": "Antimycotica",
+        "recept": "Rp. Fluconazol 150mg capsule\ndtd. No. 1\nS. Oraal in te nemen als een eenmalige dosis. De behandeling duurt één dag.",
+        "medische_vraag": "Ik heb een vaginale infectie. Wat helpt?",
+        "patientinformatie": "Patiënt is een 50-jarige vrouw met COPD en geen penicilline-allergie."
+    },
+    {
+        "medicijn": "Naproxenum",
+        "categorie": "NSAID",
+        "recept": "Rp. Naproxenum 500mg tablet\ndtd. No. 10\nS. 2x daags 1 tablet gedurende de menstruatie, maximaal 5 dagen.",
+        "medische_vraag": "Ik heb pijnlijke menstruaties. Wat is effectieve pijnstilling?",
+        "patientinformatie": "Patiënt is 46 jaar, vrouw, heeft geen chronische ziektes en is allergisch voor penicilline."
+    },
+    {
+        "medicijn": "Metformine",
+        "categorie": "Biguaniden",
+        "recept": "Rp. Metformine 500mg tabletten\ndtd. No. 60\nS. 2 maal daags 1 tablet, gedurende 3 maanden",
+        "medische_vraag": "Ik heb PCOS. Wat zijn mijn medicatieopties?",
+        "patientinformatie": "Patiënt is een 46-jarige vrouw met diabetes en geen penicilline-allergie."
+    },
+    {
+        "medicijn": "Domperidon",
+        "categorie": "Bevordert de aanmaak van prolactine",
+        "recept": "Rp. Domperidon 10mg tabletten\ndtd. No. 60\nS. 3 maal daags 1 tablet gedurende 2 weken. Indien nodig, daarna afbouwen.",
+        "medische_vraag": "Ik heb borstvoedingsproblemen. Ik heb medicatie nodig. Welke kan ik gebruiken?",
+        "patientinformatie": "Patiënt is een 34-jarige vrouw zonder chronische ziekten en zonder penicilline-allergie."
+    },
+    {
+        "medicijn": "Epinefrine",
+        "categorie": "Adrenaline",
+        "recept": "Rp. Epinefrine 0.3mg autoinjector\ndtd. No. 1\nS. Dien toe intramusculair in de laterale zijde van de dij bij een allergische reactie. Bel onmiddellijk 112. Raadpleeg een arts na gebruik.",
+        "medische_vraag": "Ik heb een plotselinge allergische reactie gehad. Kan je een EpiPen voorschrijven?",
+        "patientinformatie": "Patiënt is een 48-jarige vrouw met COPD en een penicilline-allergie."
+    },
+    {
+        "medicijn": "Doxylamine/pyridoxine",
+        "categorie": "Antihistaminicum/vitamine B6",
+        "recept": "Rp. Doxylamine/pyridoxine 10 mg/10 mg tablet\ndtd. No. 30\nS. Neem 's avonds voor het slapen gaan 2 tabletten. Indien nodig, overdag 1 tablet extra. Maximaal 4 tabletten per dag. Gebruik dit middel tot de misselijkheid afneemt, maar niet langer dan 4 weken.",
+        "medische_vraag": "Ik heb ochtendmisselijkheid in de zwangerschap. Wat mag ik gebruiken?",
+        "patientinformatie": "Leeftijd: 52, geslacht: vrouw, chronische ziekte: COPD, penicilline allergie: false"
+    }
+]
