@@ -17,5 +17,8 @@ In \citep{hsu2025medplan} a more systematic approach of reasoning about medical 
 The guardrail takes the approach of SOAP (Subjective, Objective, Assessment, Plan) to generate medical plans.
 This approach is more focused on the planning aspect of medical care, rather than directly addressing correctness in medication-related queries.
 It is interesting to see that the approach reflects the medical practice of SOAP, which is a common method used by healthcare professionals to document patient care.
-
-Article that discusses how to get to safe use of LLMs in \citep{wu2024medical}.
+Better performance on safe responses from LLMs can be achieved by providing well structured data to the LLM as shown in \citep{wu2024medical}.
+The authors created a graph structure of medical sources that links subjects to medical books & papers.
+The medical books & papers are then linked to formal medical vocabularies.
+This approach of applying RAG with a graph structure allows for more accurate and reliable responses from LLMs.
+The experiments showed a significant improvement to the safety of LLM outputs when using this structured approach.
