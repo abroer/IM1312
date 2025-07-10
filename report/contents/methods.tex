@@ -23,16 +23,19 @@ We will test and compare four experimental conditions to evaluate the effectiven
 The evaluation focuses on whether the guardrail meets defined correctness criteria in realistic scenarios and what design choices contribute to its effectiveness.
 
 \subsection{Baseline setup}
-In the baseline setup \ref{fig:baselineSetup} we will use a large language model (LLM) to generate responses to medical prompts without any guardrails.
+In the baseline setup (figure \ref{fig:baselineSetup}) we will use a large language model (LLM) to generate responses to medical prompts without any guardrails.
+The model used is the Google Gemini 2.0 flash model, which is a large language model trained on a wide range of data, including medical texts \citep{saab2024capabilities}.
 The medical question will be directly used as prompt for the LLM.
-Later interations of the project proved that the medical question needed to be extended with additional patient information.
-The information was primarily needed for manual review by an expert user.
+Later iterations of the project proved that the medical question needed to be extended with additional patient information.
+The information was primarily needed for manual review by an expert user as the medical context of the patient is important to validate if the recipe is correct.
 Together with the prompt the LLM wil be provided with a system instruction that specifies the task and expected output format.
 As the medical question if formulated in Dutch, the system instruction is also in Dutch.
 \begin{verbatim}
-    Je bent een medisch expert. Beantwoord de medische vraag met een recept volgens het volgende template:
+    Je bent een medisch expert. Beantwoord de medische vraag met
+    een recept volgens het volgende template:
     'Rp. [Medicijnaam] [Sterkte] [Vorm]\ndtd. No. [Aantal]\n S. [Instructie]'.
-    Neem relevante informatie over de patiënt in acht, zoals leeftijd en eventuele allergieën.
+    Neem relevante informatie over de patiënt in acht, zoals leeftijd en
+    eventuele allergieën.
     Geef de formele medicijnnaam in het JSON-veld 'medicijn'.
     Benoem de categorie van het medicijn in het JSON-veld 'categorie'.
     Geef bij de instructie ook de duur van de behandeling aan.
@@ -40,7 +43,7 @@ As the medical question if formulated in Dutch, the system instruction is also i
     Voeg de patiëntinformatie toe in het JSON-veld 'patientinformatie'.
 \end{verbatim}
 
-\begin{figure}
+\begin{figure}[H]
     \includegraphics[width=0.5\textwidth]{figures/baselineSetup.png}
     \captionof{figure}{Baseline setup for generating medical recipes without guardrails.}
     \label{fig:baselineSetup}
@@ -53,7 +56,7 @@ The RAG component will retrieve relevant information about the medication from a
 The output will be validated for correctness of indication, dosage, frequency and duration of use.
 When the output is not correct the response will be blocked. Only when the output is correct, it will be returned to the user.
 
-\begin{figure}
+\begin{figure}[H]
     \includegraphics[width=0.5\textwidth]{figures/RAGSetup.png}
     \captionof{figure}{RAG-only setup for generating medical recipes with retrieval-augmented generation.}
     \label{fig:ragSetup}
@@ -65,7 +68,7 @@ In the moderator-only setup \ref{fig:moderatorSetup}, we will use a large langua
 The moderator model will evaluate the generated output and flag or block incorrect or unsafe content.
 The same model will be used for both the generation and moderation tasks, but with different system instructions.
 
-\begin{figure}
+\begin{figure}[H]
     \includegraphics[width=0.5\textwidth]{figures/moderatorSetup.png}
     \captionof{figure}{Moderator-only setup for generating medical recipes with a moderator model.}
     \label{fig:moderatorSetup}
@@ -78,7 +81,7 @@ The RAG component will retrieve relevant information about the medication from a
 The moderator model will then evaluate the generated output and flag or block incorrect or unsafe content.
 The recipe is considered correct when it is both grounded in the retrieved information and passes the moderation check.
 
-\begin{figure}
+\begin{figure}[H]
     \includegraphics[width=0.5\textwidth]{figures/combinedSetup.png}
     \captionof{figure}{Combined setup for generating medical recipes with retrieval-augmented generation and a moderator model.}
     \label{fig:combinedSetup}
