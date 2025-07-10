@@ -53,8 +53,8 @@ As the medical question if formulated in Dutch, the system instruction is also i
 
 In the RAG-only setup \ref{fig:ragSetup}, we will use a large language model (LLM) to generate responses to medical prompts, but with the addition of retrieval-augmented generation (RAG).
 The RAG component will retrieve relevant information about the medication from apotheek.nl and use that information to validate the generated output.
-The output will be validated for correctness of indication, dosage, frequency and duration of use.
-When the output is not correct the response will be blocked. Only when the output is correct, it will be returned to the user.
+The output will be validated for correctness of medicine, dosage, shape, frequency and instruction.
+When the output is not correct the response will be reported as false. Thsi allows the system to taker corrective actions when the response is incorrect.
 
 \begin{figure}[H]
     \includegraphics[width=0.5\textwidth]{figures/RAGSetup.png}
