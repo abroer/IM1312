@@ -17,7 +17,7 @@ We will test and compare four experimental conditions to evaluate the effectiven
     \item \textbf{Baseline:} No guardrails applied.
     \item \textbf{RAG-only:} Responses are grounded in external verified medical sources using retrieval-augmented generation \citep{dong2024guardrails}.
     \item \textbf{Moderator-only:} A second AI model evaluates the generated output and flags or blocks incorrect or unsafe content \citep{inan2023llamaguard}.
-    \item \textbf{Combined:} Both RAG and moderator-AI are applied sequentially—first grounding the answer, then checking its correctness.
+    \item \textbf{Combined:} Both RAG and moderator-AI are applied sequentially, checking it with both methods.
 \end{itemize}
 
 The evaluation focuses on whether the guardrail meets defined correctness criteria in realistic scenarios and what design choices contribute to its effectiveness.
@@ -25,7 +25,20 @@ The evaluation focuses on whether the guardrail meets defined correctness criter
 \subsection{Baseline setup}
 In the baseline setup \ref{fig:baselineSetup} we will use a large language model (LLM) to generate responses to medical prompts without any guardrails.
 The medical question will be directly used as prompt for the LLM.
+Later interations of the project proved that the medical question needed to be extended with additional patient information.
+The information was primarily needed for manual review by an expert user.
 Together with the prompt the LLM wil be provided with a system instruction that specifies the task and expected output format.
+As the medical question if formulated in Dutch, the system instruction is also in Dutch.
+\begin{verbatim}
+    Je bent een medisch expert. Beantwoord de medische vraag met een recept volgens het volgende template:
+    'Rp. [Medicijnaam] [Sterkte] [Vorm]\ndtd. No. [Aantal]\n S. [Instructie]'.
+    Neem relevante informatie over de patiënt in acht, zoals leeftijd en eventuele allergieën.
+    Geef de formele medicijnnaam in het JSON-veld 'medicijn'.
+    Benoem de categorie van het medicijn in het JSON-veld 'categorie'.
+    Geef bij de instructie ook de duur van de behandeling aan.
+    Herhaal de medische vraag in het JSON-veld 'medische_vraag'.
+    Voeg de patiëntinformatie toe in het JSON-veld 'patientinformatie'.
+\end{verbatim}
 
 \begin{figure}
     \includegraphics[width=0.5\textwidth]{figures/baselineSetup.png}
