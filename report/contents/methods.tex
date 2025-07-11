@@ -23,7 +23,7 @@ We will test and compare four experimental conditions to evaluate the effectiven
 The evaluation focuses on whether the guardrail meets defined correctness criteria in realistic scenarios and what design choices contribute to its effectiveness.
 
 \subsection{Baseline setup}
-In the baseline setup (figure \ref{fig:baselineSetup}) we will use a large language model (LLM) to generate responses to medical prompts without any guardrails.
+In the baseline setup (\autoref{fig:baselineSetup}) we will use a large language model (LLM) to generate responses to medical prompts without any guardrails.
 The model used is the Google Gemini 2.0 flash model, which is a large language model trained on a wide range of data, including medical texts \citep{saab2024capabilities}.
 The medical question will be directly used as prompt for the LLM.
 Later iterations of the project proved that the medical question needed to be extended with additional patient information.
@@ -51,10 +51,11 @@ As the medical question if formulated in Dutch, the system instruction is also i
 
 \subsection{RAG-only setup}
 
-In the RAG-only setup \ref{fig:ragSetup}, we will use a large language model (LLM) to generate responses to medical prompts, but with the addition of retrieval-augmented generation (RAG).
+In the RAG-only setup (\autoref{fig:ragSetup}), we will use a large language model (LLM) to generate responses to medical prompts and check the response using retrieval-augmented generation (RAG).
 The RAG component will retrieve relevant information about the medication from apotheek.nl and use that information to validate the generated output.
-The output will be validated for correctness of medicine, dosage, shape, frequency and instruction.
-When the output is not correct the response will be reported as false. Thsi allows the system to taker corrective actions when the response is incorrect.
+The output will be validated for correctness of medicine, dosage, shape, frequency and instruction taking the context of the patient information into consideration.
+When the output is not correct the response will be reported as false.
+This allows the system to take corrective actions when the response is incorrect.
 
 \begin{figure}[H]
     \includegraphics[width=0.5\textwidth]{figures/RAGSetup.png}
@@ -64,7 +65,7 @@ When the output is not correct the response will be reported as false. Thsi allo
 
 \subsection{Moderator-only setup}
 
-In the moderator-only setup \ref{fig:moderatorSetup}, we will use a large language model (LLM) to generate responses to medical prompts, but with the addition of a moderator model.
+In the moderator-only setup (\autoref{fig:moderatorSetup}), we will use a large language model (LLM) to generate responses to medical prompts and check the response with a moderator LLM model.
 The moderator model will evaluate the generated output and flag or block incorrect or unsafe content.
 The same model will be used for both the generation and moderation tasks, but with different system instructions.
 
@@ -76,9 +77,9 @@ The same model will be used for both the generation and moderation tasks, but wi
 
 \subsection{Combined setup}
 
-In the combined setup \ref{fig:combinedSetup}, we will use a large language model (LLM) to generate responses to medical prompts, with both retrieval-augmented generation (RAG) and a moderator model.
+In the combined setup (\autoref{fig:combinedSetup}), we will use a large language model (LLM) to generate responses to medical prompts and check the response with both retrieval-augmented generation (RAG) and a moderator model.
 The RAG component will retrieve relevant information about the medication from apotheek.nl and use that information to validate the generated output.
-The moderator model will then evaluate the generated output and flag or block incorrect or unsafe content.
+The moderator model will evaluate the generated output and flag or block incorrect or unsafe content.
 The recipe is considered correct when it is both grounded in the retrieved information and passes the moderation check.
 
 \begin{figure}[H]
@@ -89,15 +90,17 @@ The recipe is considered correct when it is both grounded in the retrieved infor
 
 \subsection{Apparatus}
 
-The exact technical setup for this project has not yet been determined. An initial idea is to use existing large language model agents, such as ChatGPT with function-calling capabilities, to simulate retrieval-augmented generation and moderation behaviors without requiring full custom implementation in Python.
-
-If this approach proves insufficient for the intended experiments, alternative methods will be explored. Possible options include low-code or API-based solutions, or minimal programming to construct basic prototypes.
-
-The final choice of tools and models will depend on feasibility, ease of integration, and their suitability for testing correctness guardrails in medical prompts.
+The LLM used for the baseline, RAG-only, moderator-only, and combined setups will be the Google Gemini 2.0 flash model.
+No changes have been made to the model parameters like temperature or top-p sampling, as the model is already optimized for generating high-quality responses.
+To be able to process the entire dataset efficiently, the medical questions and recipes will be processed in the baseline setup as one big batch of 200 questions.
+For running the guardrail mechanisms, the model will be called in a loop each baseline answer.
+This setup deviates from the intended guardrail setup, but makes data analysis easier and more efficient.
+When the initial prompt to the model would generate different answers the performance of the guardrail mechanisms would be harder to compare.
+Feeding the same baseline answers to all guardrail mechanisms allows for a fair comparison of the performance of the different guardrail mechanisms.
 
 \subsection{Stimuli}
 
-To evaluate the guardrails, we will use a fixed set of prompts that represent high-risk medical questions, particularly about medications (e.g., dosage, indications, and contraindications).
+To evaluate the guardrails, we will use a fixed set of prompts that represent medical questions including patient information.
 These tasks represent real-world LLM use cases with identifiable correctness constraints \citep{pais2024medication}.
 The responses will be formatted as formal medical recipes following the Dutch guidelines for medication prescriptions \citep{farmacotherapeutischkompas}.
 \begin{verbatim}
@@ -106,22 +109,16 @@ The responses will be formatted as formal medical recipes following the Dutch gu
           S. [Instructie]
 \end{verbatim}
 
+The RAG guardrail will first find the medication information on apotheek.nl using a Google search.
+The relevant information will be extracted from the retrieved web page and feeded to the LLM as part of the prompt.
+The moderator guardrail will use the same system instruction as the RAG guardrail, but will not use the retrieved information.
+
 \subsection{Dataset}
 
-The dataset will consist of a set of medical questions and their corresponding correct and incorrect recipes.
-The medical questions will be used as prompt input for the LLMs, and the recipes will be used to evaluate the correctness of the generated output.
+The dataset will consist of a set of 200 medical questions and relevant patient information including age, gender and reported symptoms.
+The medical questions and patient information will be used as prompt input for the baseline setup, and the recipes will be used to evaluate the correctness of the generated output.
 Because recipes are subject to privacy regulations, the dataset is completely synthetic and has been generated by the researchers.
-If this research was executed beyond the scope of a course, we would have used real-world data from the Dutch guidelines for medication prescriptions \citep{farmacotherapeutischkompas}.
-The medical questions would have been anonymized, and the recipes would have been generated by a medical professional.
-For this course context we will restrict ourselves to the fictional dataset.
-To make sure the dataset is representative of real-world medical questions a 1\% sample of the dataset will be manually checked by a medical professional.
-
-The dataset has 2000 examples of medical questions and their corresponding recipes.
-For test purposes a secondary dataset is created with the based on the examples, but with deliberately incorrect recipes or medical questions.
-The test set is restricted to 500 examples.
-The guardrail performance can be measured by comparing the number of recipes that get blocked by the guardrail mechanism.
-Blocking a valid recipe results in a false positive, while allowing an incorrect recipe to pass through results in a false negative.
-Appendix \ref{appendix:dataset} provides an example of the two datasets.
+To make sure the dataset is representative of real-world medical questions all questions have been reviewed by a medical expert.
 
 \subsection{Design}
 
