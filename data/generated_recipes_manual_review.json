@@ -16,11 +16,11 @@
     "correct": true
   },
   {
-    "medicijn": "Amoxicilline",
-    "categorie": "Antibioticum",
-    "recept": "Rp. Amoxicilline 500mg capsules\ndtd. No. 21\nS. Driemaal daags 1 capsule gedurende 7 dagen.",
-    "medische_vraag": "Ik heb een longontsteking. Welke antibiotica zijn geschikt?",
-    "patientinformatie": "Patiënt, man, 71 jaar oud met COPD en koorts (CRB65 score 1), heeft een longontsteking en geen penicilline allergie.",
+    "medicijn": "Levofloxacine",
+    "categorie": "Antibioticum (Fluorochinolon)",
+    "recept": "Rp. Levofloxacine 500mg tabletten\ndtd. No. 7\nS. 1 maal daags 1 tablet gedurende 7 dagen.",
+    "medische_vraag": "Ik heb een longontsteking, ik moet antibiotica krijgen, welke?",
+    "patientinformatie": "Patiënt, man, 82 jaar oud, COPD, geen penicilline allergie",
     "correct": true
   },
   {
@@ -763,7 +763,7 @@
     "medicijn": "Vasectomie",
     "categorie": "Anticonceptie",
     "recept": "Rp. Vasectomie nvt\ndtd. No. 1\nS. Chirurgische sterilisatie. Eenmalige ingreep.",
-    "medische_vraag": "Ik wil anticonceptie gebruiken. Ik wil pillen slikken. Wat zijn de opties?",
+    "medische_vraag": "Ik wil anticonceptie gebruiken. Wat zijn de opties?",
     "patientinformatie": "Patiënt: man, 58 jaar, diabetes, penicilline-allergie",
     "correct": false
   },
@@ -1315,7 +1315,7 @@
     "medicijn": "Metformine",
     "categorie": "Bloedglucoseverlagend middel",
     "recept": "Rp. Metformine 500mg tabletten\ndtd. No. 90\nS. Driemaal daags 1 tablet, gedurende de zwangerschap.",
-    "medische_vraag": "Ik heb zwangerschapsdiabetes. Welke behandeloptie is er?",
+    "medische_vraag": "Ik heb zwangerschapsdiabetes. Welke behandeling is nodig?",
     "patientinformatie": "Patiënt is 70 jaar oud, vrouw, geen chronische ziekte, geen penicilline-allergie.",
     "correct": true
   },
