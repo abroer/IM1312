@@ -17,7 +17,7 @@ We test and compare four experimental conditions to evaluate the effectiveness o
     \item \textbf{Baseline:} No guardrails applied.
     \item \textbf{RAG-only:} Responses are grounded in external verified medical sources using retrieval-augmented generation \citep{dong2024guardrails}.
     \item \textbf{Moderator-only:} A second AI model evaluates the generated output and flags or blocks incorrect or unsafe content \citep{inan2023llamaguard}.
-    \item \textbf{Combined:} Both RAG and moderator-AI are applied sequentially, checking it with both methods.
+    \item \textbf{Combined:} Both RAG and moderator-AI are applied sequentially, first applying RAG grounding, followed by moderator verification.
 \end{itemize}
 
 The evaluation focuses on whether the guardrail meets defined correctness criteria in realistic scenarios and what design choices contribute to its effectiveness.
@@ -25,7 +25,7 @@ The evaluation focuses on whether the guardrail meets defined correctness criter
 \subsection{Baseline setup}
 In the baseline setup (\autoref{fig:baselineSetup}) we use a large language model (LLM) to generate responses to medical prompts without any guardrails.
 The model used is the Google Gemini 2.0 flash model, which is a large language model trained on a wide range of data, including medical texts \citep{saab2024capabilities}.
-The medical question are directly used as prompt for the LLM.
+The medical questions are directly used as prompt for the LLM.
 Later iterations of the project proved that the medical question needed to be extended with additional patient information.
 The information was primarily needed for manual review by an expert user as the medical context of the patient is important to validate if the recipe is correct.
 Together with the prompt the LLM is provided with a system instruction that specifies the task and expected output format.
@@ -111,7 +111,7 @@ The responses are formatted as formal medical recipes following the Dutch guidel
 
 The RAG guardrail first finds the medication information on apotheek.nl using a Google search.
 The relevant information is extracted from the retrieved web page and fed to the LLM as part of the prompt.
-The moderator guardrail uses a simular system instruction as the RAG guardrail, but will not use the retrieved information.
+The moderator guardrail uses a similar system instruction as the RAG guardrail, but will not use the retrieved information.
 
 \subsection{Dataset}
 
