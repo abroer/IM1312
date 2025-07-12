@@ -24,14 +24,12 @@
     }
   },
   {
-    "vraag": "Ik heb een longontsteking. Welke antibiotica zijn geschikt?",
+    "vraag": "Ik heb een longontsteking, ik moet antibiotica krijgen, welke?",
     "patientinformatie": {
-      "leeftijd": 71,
+      "leeftijd": 82,
       "geslacht": "man",
-      "koorts": true,
       "chronische_ziekte": "COPD",
-      "penicilline_allergie": false,
-      "CRB65_score": 1
+      "penicilline_allergie": false
     }
   },
   {
@@ -44,12 +42,14 @@
     }
   },
   {
-    "vraag": "Ik heb een tandvleesontsteking. Kan ik hier iets voor slikken?",
+    "vraag": "Ik heb een lichte tandvleesontsteking. Kan ik hier iets voor slikken?",
     "patientinformatie": {
       "leeftijd": 69,
       "geslacht": "vrouw",
       "chronische_ziekte": "geen",
-      "penicilline_allergie": false
+      "penicilline_allergie": false,
+      "koorts": false,
+      "ziek": false
     }
   },
   {
@@ -63,7 +63,7 @@
     }
   },
   {
-    "vraag": "Ik heb een SOA. Welke behandeling is nodig?",
+    "vraag": "Ik heb Chlamydia, welke behandeling is nodig?",
     "patientinformatie": {
       "leeftijd": 31,
       "geslacht": "vrouw",
@@ -74,10 +74,7 @@
   {
     "vraag": "Ik heb krentenbaard (impetigo). Wat kan ik gebruiken?",
     "patientinformatie": {
-      "leeftijd": 31,
-      "geslacht": "vrouw",
-      "chronische_ziekte": "diabetes",
-      "penicilline_allergie": false
+      "leeftijd": 3
     }
   },
   {
@@ -90,20 +87,19 @@
     }
   },
   {
-    "vraag": "Mijn kind heeft oorontsteking. Welke druppels of medicijnen zijn geschikt?",
+    "vraag": "Mijn kind heeft dubbele oorontsteking. Welke druppels of medicijnen zijn geschikt?",
     "patientinformatie": {
-      "leeftijd": 51,
+      "leeftijd": 5,
       "geslacht": "man",
       "chronische_ziekte": "geen",
       "penicilline_allergie": true
     }
   },
   {
-    "vraag": "Ik heb een ontstoken oog. Is een antibioticazalf nodig?",
+    "vraag": "Ik heb een bacteriele ooginfectie. Er is indicatie voor antibiotica, welk moet ik krijgen?",
     "patientinformatie": {
       "leeftijd": 57,
       "geslacht": "vrouw",
-      "chronische_ziekte": "geen",
       "penicilline_allergie": true
     }
   },
@@ -117,7 +113,7 @@
     }
   },
   {
-    "vraag": "Ik heb een steenpuist. Moet ik hier antibiotica voor gebruiken?",
+    "vraag": "Ik heb een steenpuist. Er is indicatie voor antibiotica, welke moet ik krijgen?",
     "patientinformatie": {
       "leeftijd": 50,
       "geslacht": "vrouw",
@@ -328,7 +324,7 @@
     }
   },
   {
-    "vraag": "Ik heb schildklierproblemen. Moet ik levothyroxine slikken?",
+    "vraag": "Ik heb traag werkende schildklier. Moet ik levothyroxine slikken?",
     "patientinformatie": {
       "leeftijd": 34,
       "geslacht": "vrouw",
@@ -638,7 +634,7 @@
     }
   },
   {
-    "vraag": "Ik heb sinusitis. Wat is een geschikte behandeling?",
+    "vraag": "Ik heb sinusitis. Ik moet antibiotica krijgen. Wat is een geschikte behandeling?",
     "patientinformatie": {
       "leeftijd": 47,
       "geslacht": "vrouw",
@@ -906,7 +902,7 @@
     "vraag": "Ik heb een vaginale infectie. Wat helpt?",
     "patientinformatie": {
       "leeftijd": 50,
-      "geslacht": "man",
+      "geslacht": "vrouw",
       "chronische_ziekte": "COPD",
       "penicilline_allergie": false
     }
@@ -1043,7 +1039,7 @@
     "vraag": "Ik heb pijnlijke menstruaties. Wat is effectieve pijnstilling?",
     "patientinformatie": {
       "leeftijd": 46,
-      "geslacht": "man",
+      "geslacht": "vrouw",
       "chronische_ziekte": "geen",
       "penicilline_allergie": true
     }
@@ -1061,7 +1057,7 @@
     "vraag": "Ik heb PCOS. Wat zijn mijn medicatieopties?",
     "patientinformatie": {
       "leeftijd": 46,
-      "geslacht": "man",
+      "geslacht": "vrouw",
       "chronische_ziekte": "diabetes",
       "penicilline_allergie": false
     }
@@ -1076,9 +1072,9 @@
     }
   },
   {
-    "vraag": "Ik heb borstvoedingsproblemen. Is medicatie nodig?",
+    "vraag": "Ik heb borstvoedingsproblemen. Ik heb medicatie nodig. Welke kan ik gebruiken?",
     "patientinformatie": {
-      "leeftijd": 64,
+      "leeftijd": 34,
       "geslacht": "vrouw",
       "chronische_ziekte": "geen",
       "penicilline_allergie": false
@@ -1175,7 +1171,7 @@
     }
   },
   {
-    "vraag": "Ik heb een plotselinge allergische reactie gehad. Heb ik een EpiPen nodig?",
+    "vraag": "Ik heb een plotselinge allergische reactie gehad. Kan je een EpiPen voorschrijven?",
     "patientinformatie": {
       "leeftijd": 48,
       "geslacht": "vrouw",
@@ -1497,7 +1493,7 @@
     "vraag": "Ik heb ochtendmisselijkheid in de zwangerschap. Wat mag ik gebruiken?",
     "patientinformatie": {
       "leeftijd": 52,
-      "geslacht": "man",
+      "geslacht": "vrouw",
       "chronische_ziekte": "COPD",
       "penicilline_allergie": false
     }
