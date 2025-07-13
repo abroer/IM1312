@@ -1,12 +1,10 @@
-\section{Results}
-
 In this section, I report all the findings from the experiments, following the order of the research questions. Wherever possible, the original figures and tables are used to provide a clear overview.
 
 \subsection{RQ1: Can a combined guardrail mechanism (RAG and moderator) ensure 100\% correctness in LLM responses to medical prompts?}
 
 First of all, none of the tested guardrail methods managed to reach perfect (100\%) correctness. Table~\ref{tab:confusionmatrix} gives a breakdown of the confusion matrix for each model, as compared to the gold standard from manual review. For the combined approach, this means that out of 200 queries, 104 were correctly classified as true positives, while 36 correct answers were missed (false negatives).
 
-\begin{table}[ht]
+\begin{table}[H]
 \centering
 \caption{Confusion matrix per method. TP = True Positives, FN = False Negatives, TN = True Negatives, FP = False Positives.}
 \label{tab:confusionmatrix}
@@ -23,7 +21,7 @@ Combined   & 104 & 36 & 31 & 28 \\
 
 The bar chart in Figure~\ref{fig:prediction_performance_bar} shows at a glance how each method performed in terms of true/false positives and negatives.
 
-\begin{figure}[ht]
+\begin{figure}[H]
   \centering
   \includegraphics[width=0.95\linewidth]{figures/prediction_performance_per_approach.png}
   \caption{Prediction Performance per Approach, showing true positives, true negatives, false positives, and false negatives for RAG, Moderator, and Combined.}
@@ -38,7 +36,7 @@ To determine correctness, each model's answer was compared with the expert revie
 
 The key performance metrics are shown in Table~\ref{tab:metrics} and, for visual reference, in Figure~\ref{fig:model_performance_comparison_per_metric}. What stands out is that the Moderator approach reaches the highest recall (meaning it rarely misses a correct answer), while the Combined model has the highest precision (it makes the fewest false positive errors). RAG sits somewhere between the two.
 
-\begin{table}[ht]
+\begin{table}[H]
 \centering
 \caption{Performance metrics per method.}
 \label{tab:metrics}
@@ -53,7 +51,7 @@ Combined   & 78.8 & 74.3 & 76.5 & 67.8 \\
 \end{tabular}
 \end{table}
 
-\begin{figure}[ht]
+\begin{figure}[H]
   \centering
   \includegraphics[width=0.95\linewidth]{figures/model_performance comparison_per_metric.png}
   \caption{Model Performance Comparison per Metric: precision, recall, F1 score, and accuracy for each model.}
@@ -64,7 +62,7 @@ Combined   & 78.8 & 74.3 & 76.5 & 67.8 \\
 
 The detailed results per question are shown in Figure~\ref{fig:dna-results}. There were a few surprising cases: in 12 questions, both RAG and Moderator marked the answer as correct, but Combined did not. Conversely, there were 4 instances where RAG marked a response as incorrect, while Combined approved it. These are exceptions rather than the rule, but they show that the models do not always behave consistently.
 
-\begin{figure}[ht]
+\begin{figure}[H]
     \centering
     \includegraphics[width=1\linewidth]{figures/dna-results.png}
     \caption{Results on individual questions for each model, positive (green) and negative (red) answers.}
