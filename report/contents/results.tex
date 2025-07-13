@@ -1,12 +1,27 @@
-\subsection{Overall Model Performance}
+\section{Results}
 
-We tested three different approaches: RAG, Moderator, and Combined, on a set of 200 medication-related questions. The outcomes were compared to a manual review, which acted as our gold standard for correctness. According to this review, 140 of the answers were considered correct and 60 were incorrect.
+In this section, I report all the findings from the experiments, following the order of the research questions. Wherever possible, the original figures and tables are used to provide a clear overview.
 
-Looking at Figure~\ref{fig:prediction_performance_bar}, the differences between the models quickly become clear. Moderator picks up the most correct answers, with 133 true positives, and misses only 7 false negatives. However, it also produces the most false positives at 50, which means it can be too generous in what it accepts as correct. Its true negatives are low, only 9, showing it is not strict in filtering out wrong answers.
+\subsection{RQ1: Can a combined guardrail mechanism (RAG and moderator) ensure 100\% correctness in LLM responses to medical prompts?}
 
-RAG finds 109 true positives and 28 true negatives. Both false positives and false negatives stand at 31, which suggests this approach sits right in the middle. RAG does not lean toward one type of error and can be seen as a neutral or balanced option.
+First of all, none of the tested guardrail methods managed to reach perfect (100\%) correctness. Table~\ref{tab:confusionmatrix} gives a breakdown of the confusion matrix for each model, as compared to the gold standard from manual review. For the combined approach, this means that out of 200 queries, 104 were correctly classified as true positives, while 36 correct answers were missed (false negatives).
 
-The Combined approach is the most careful. It only accepts 104 correct answers and misses 36, so it tends to overlook good answers. On the upside, it produces the fewest false positives at 28 and the highest number of true negatives at 31. This tells us that Combined is the strictest in its standards.
+\begin{table}[ht]
+\centering
+\caption{Confusion matrix per method. TP = True Positives, FN = False Negatives, TN = True Negatives, FP = False Positives.}
+\label{tab:confusionmatrix}
+\begin{tabular}{lcccc}
+\toprule
+Method & TP & FN & TN & FP \\
+\midrule
+RAG        & 109 & 31 & 28 & 31 \\
+Moderator  & 133 & 7  & 9  & 50 \\
+Combined   & 104 & 36 & 31 & 28 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The bar chart in Figure~\ref{fig:prediction_performance_bar} shows at a glance how each method performed in terms of true/false positives and negatives.
 
 \begin{figure}[ht]
   \centering
@@ -15,11 +30,28 @@ The Combined approach is the most careful. It only accepts 104 correct answers a
   \label{fig:prediction_performance_bar}
 \end{figure}
 
-\subsection{Performance Metrics and Trade-offs}
+\subsection{RQ2: How was correctness operationalized for medication-related queries?}
 
-Figure~\ref{fig:model_performance_comparison_per_metric} shows the key performance numbers for each model: precision, recall, F1 score, and accuracy. Moderator scores highest on recall at 95.0 percent, so it almost never misses a correct answer. The trade-off is that its precision drops to 72.7 percent, as it tends to let more incorrect answers through. Combined flips this pattern and is most careful in what it approves, with a precision of 78.8 percent, but its recall drops to 74.3 percent, so it lets more good answers slip by. RAG sits right in the middle, with precision and recall both at 77.9 percent.
+To determine correctness, each model's answer was compared with the expert review. An answer counted as "correct" only if the medication, dosage, and indication matched what the expert considered appropriate for the specific patient. These criteria were used throughout for all performance calculations.
 
-When we look at F1 score and accuracy, Moderator comes out on top, but not by much. Its F1 score is 82.4 percent, and accuracy is 71.4 percent. RAG and Combined follow closely behind. This mix of strengths and weaknesses in each model reflects the real-world trade-offs you face when choosing a guardrail approach.
+\subsection{RQ3: What are the strengths and limitations of each method in ensuring factual correctness?}
+
+The key performance metrics are shown in Table~\ref{tab:metrics} and, for visual reference, in Figure~\ref{fig:model_performance_comparison_per_metric}. What stands out is that the Moderator approach reaches the highest recall (meaning it rarely misses a correct answer), while the Combined model has the highest precision (it makes the fewest false positive errors). RAG sits somewhere between the two.
+
+\begin{table}[ht]
+\centering
+\caption{Performance metrics per method.}
+\label{tab:metrics}
+\begin{tabular}{lcccc}
+\toprule
+Method & Precision (\%) & Recall (\%) & F1-score (\%) & Accuracy (\%) \\
+\midrule
+RAG        & 77.9 & 77.9 & 77.9 & 68.8 \\
+Moderator  & 72.7 & 95.0 & 82.4 & 71.4 \\
+Combined   & 78.8 & 74.3 & 76.5 & 67.8 \\
+\bottomrule
+\end{tabular}
+\end{table}
 
 \begin{figure}[ht]
   \centering
@@ -28,36 +60,17 @@ When we look at F1 score and accuracy, Moderator comes out on top, but not by mu
   \label{fig:model_performance_comparison_per_metric}
 \end{figure}
 
-\subsection{Results on individual Questions}
-To give a clearer picture of how each model performs, we looked at the results for individual questions.
-The bar charts in \autoref{fig:dna-results} show which answers were positive (green) and which were negative (red) for each model.
-The expectation is that when both RAG-only and Moderator-only are positive, the Combined model should also be positive.
-However, this is not always the case. For example, in question 10, RAG-only and Moderator-only are both positive, but Combined is negative.
-The number of occurrences that this happens is low (12), but it does show some instability of the behavior of the models.
+\subsection{Results on Individual Questions}
 
-Something similar happens in question 79, where either RAG-only is negative, but Combined is positive.
-The expectation is that if RAG-only is negative, Combined should also be negative, but this is not the case.
-The number of occurrences that this happens is very low (4), but it again shows that the models are not always consistent.
+The detailed results per question are shown in Figure~\ref{fig:dna-results}. There were a few surprising cases: in 12 questions, both RAG and Moderator marked the answer as correct, but Combined did not. Conversely, there were 4 instances where RAG marked a response as incorrect, while Combined approved it. These are exceptions rather than the rule, but they show that the models do not always behave consistently.
 
-The exact same code, prompt and system instruction has been used for RAG and Moderator in the Combined model.
-So, the expectation is that the behavior in RAG-only/Moderator-only should be the same as in Combined.
-The inconsistencies must be found in other external factors which is further explored in the discussion section.
-
-\begin{figure}[H]
+\begin{figure}[ht]
+    \centering
     \includegraphics[width=1\linewidth]{figures/dna-results.png}
     \caption{Results on individual questions for each model, positive (green) and negative (red) answers.}
     \label{fig:dna-results}
 \end{figure}
 
-\subsection{Can Perfect Correctness Be Achieved?}
+\subsection{Summary of Results}
 
-One of the main questions in this research was whether combining RAG and Moderator could guarantee perfect correctness. The short answer is no. Even the combined approach falls short. It gives 104 true positives and 36 false negatives. While it does cut down on false positives, it still misses a fair number of correct answers. No model in this study produced perfect results.
-
-\subsection{How Was Correctness Defined?}
-
-Throughout this project, correctness was defined using a strict set of criteria. An answer was only considered correct if it matched the manual reviewer's judgment on both the medical content and whether the medication, dosage, and indication were appropriate. Every performance metric reported here uses this definition.
-
-\subsection{Summary}
-
-To sum up, each model has its own personality. Moderator hardly misses any correct answers but is not picky enough, letting through a lot of false positives. Combined is picky and almost to a fault, which means it avoids false positives but also overlooks more good answers. RAG sits comfortably in the middle, with no big risks either way. None of the models manages to be perfect, so the best choice depends on what kind of error matters most for your application. Figures~\ref{fig:prediction_performance_bar} and~\ref{fig:model_performance_comparison_per_metric} offer a visual summary of these findings.
-
+In summary, while all three methods produced a substantial number of correct answers, none of them achieved perfect correctness. All main figures and tables are presented above, as required. Any further analysis or interpretation of these findings is left to the Discussion.
