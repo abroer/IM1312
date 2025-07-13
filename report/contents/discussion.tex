@@ -7,10 +7,55 @@
 % sometimes contains the limitations of the study and suggestions for
 % future work. It often ends with a conclusion.
 
-ToDo: Investigate some samples of false positives and false negatives in the different guardrail approaches.
+This study explores whether guardrails, specifically retrieval-augmented generation (RAG), moderator models, and their combination, can ensure correctness in LLM-generated responses to medication-related medical prompts.
+While all three guardrail setups improved upon the baseline, none achieved perfect correctness, highlighting both the promise and limitations of current guardrail strategies.
 
-ToDo/Future: Are there instable answers in different runs of the same guardrail approach? Are there parameters that influence the stability of the answers (Temp/topP)?
-% https://cloud.google.com/vertex-ai/generative-ai/docs/learn/prompts/adjust-parameter-values#:~:text=Gemini%20models%20support%20a%20temperature,a%20default%20temperature%20of%201.0.
+\subsection{Performance findings and trade-offs}
+The results reveal a clear trade-off between precision and recall across the different guardrail mechanisms:
 
-Further research is needed to understand the trade-offs between different guardrail approaches and their effectiveness in ensuring output correctness.
-Further research on use of input guardrails is needed to ensure that the input to the LLM is correct and relevant.
+\begin{itemize}
+\item Moderator-only achieved the highest recall (95.0\%), indicating it was most effective at identifying correct answers.
+    However, it also had the highest false positive rate, suggesting a tendency to over-approve potentially unsafe or incorrect outputs.
+\item RAG-only offered a more balanced performance, with moderate precision and recall (both 77.9\%), but still struggled with both false positives and false negatives.
+\item Combined guardrails yielded the highest precision (78.8\%), meaning it was most conservative in approving only correct answers.
+    However, this came at the cost of recall (74.3\%), as it missed a significant number of correct responses.
+\end{itemize}
+These findings suggest that while combining RAG and moderator models can reduce the risk of approving incorrect outputs, it may also lead to under-approving correct ones—an important consideration in clinical contexts where both false positives and false negatives carry risks.
+This performance still includes a significant number of false positives and false negatives, up to the level where it is not safe to use the LLM-generated responses in a clinical setting without further human review.
+
+\subsection{Inconsistent Model Behavior}
+The confusion matrices and individual question breakdowns reveal inconsistencies in model behavior.
+Notably, there were 12 cases where both RAG and Moderator approved an answer, but the Combined model did not.
+This suggests that the sequential application of guardrails may yield unexpected difference in outcomes, making the model unreliable in certain scenarios.
+
+Conversely, in 4 cases, the Combined model approved answers that RAG alone had rejected.
+Again this highlights unexpected behvaior in the models, where same prompts can lead to different outcomes.
+
+Causes of the inconsistencies may include:
+\begin{itemize}
+    \item Temperature settings, which influence the randomness of the model's responses.
+    \item Top-p sampling, which controls the diversity of the generated text.
+\end{itemize}
+Further research is needed to understand how these parameters affect model behavior and output stability.
+
+\subsection{Correctness Criteria and Operationalization}
+Correctness was operationalized based on expert-reviewed criteria: appropriate medication, dosage, and indication tailored to patient context.
+This strict definition ensured clinical relevance but may have penalized otherwise reasonable alternatives.
+Future work could explore graded correctness or confidence scoring to better reflect real-world clinical decision-making, where multiple valid options may exist.
+The introduction of reasoning and cofidence scoring has been explored in \autoref{kang2024r}.
+A similar approach could be applied to the guardrail approaches in this study to better reflect the clinical decision-making process.
+
+\subsection{Input Quality and Model Limitations}
+The quality of the input prompts significantly influenced model performance.
+During the manual review phase the expert reviewer indentified that some medical questions were incomplete or relevant patient information was missing.
+This highlights the importance of high-quality, well-structured prompts in eliciting accurate model responses.
+Further improvement of the performannce cna be achieved by introducing input guardrails to ensure that the input is up to a level where reasonalble answers can be expected.
+For interactive applications the input guardrails can be used to guide the user to provide the necessary information.
+This will make sure that the input passes only when a certain level of input quality confidence is reached.
+An implementation that mimics the interaction of a medical professional with a patient is described in \autoref{hsu2025medplan}.
+
+\subsection*{Conclusion}
+This research demonstrates that guardrails can significantly improve the correctness of LLM outputs in medical contexts, but no single researched approach guarantees perfection.
+The choice of guardrail depends on the desired balance between safety (precision) and inclusivity (recall).
+A combined approach offers the most conservative filtering, but may miss valid answers.
+Future research should focus on refining guardrail logic, exploring input validation, and testing across diverse guardrail models to build more trustworthy AI systems for healthcare.
