@@ -28,6 +28,27 @@ When we look at F1 score and accuracy, Moderator comes out on top, but not by mu
   \label{fig:model_performance_comparison_per_metric}
 \end{figure}
 
+\subsection{Results on individual Questions}
+To give a clearer picture of how each model performs, we looked at the results for individual questions.
+The bar charts in \autoref{fig:dna-results} shows which answers where positive (green) and which were negative (red) for each model.
+The expectation is that when both RAG-only and Moderator-only are positive, the Combined model should also be positive.
+However, this is not always the case. For example, in question 10, RAG-only and Moderato-only are both positive, but Combined is negative.
+The number of occurrences that this happens is low (12), but it does show some instability of the behavior of the models.
+
+Something similar happens in question 79, where either RAG-only is negative, but Combined is positive.
+The expectation is that if RAG-only is negative, Combined should also be negative, but this is not the case.
+The number of occurrences that this happens is very low (4), but it again shows that the models is not always consistent.
+
+The exact same code, prompt and system instruction has been used for RAG and Moderator in the Combined model.
+So, the expectation is that the behavior in RAG-only/Moderator-only should be the same as in Combined.
+The inconsistencies must be found in other external factors which is furter explored in the discussion section.
+
+\begin{figure}[H]
+    \includegraphics[width=1\linewidth]{figures/dna-results.png}
+    \caption{Results on individual questions for each model, positive (green) and negative (red) answers.}
+    \label{fig:dna-results}
+\end{figure}
+
 \subsection{Can Perfect Correctness Be Achieved?}
 
 One of the main questions in this research was whether combining RAG and Moderator could guarantee perfect correctness. The short answer is no. Even the combined approach falls short. It gives 104 true positives and 36 false negatives. While it does cut down on false positives, it still misses a fair number of correct answers. No model in this study produced perfect results.
