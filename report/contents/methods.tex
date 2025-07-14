@@ -11,7 +11,7 @@
 This project follows the design research methodology \citep{wieringa2014design}, consisting of iterative cycles of building, testing, and refining artifacts.
 The artifact in this case is a guardrail mechanism for LLMs that constrains or validates generated output.
 
-We test and compare four experimental conditions to evaluate the effectiveness of different guardrail approaches for ensuring correctness in medical prompts:
+We test and compare four experimental setups to evaluate the effectiveness of different guardrail approaches for ensuring correctness in medical prompts:
 
 \begin{itemize}
     \item \textbf{Baseline:} No guardrails applied.
@@ -27,7 +27,7 @@ In the baseline setup (\autoref{fig:baselineSetup}) we use a large language mode
 The model used is the Google Gemini 2.0 flash model, which is a large language model trained on a wide range of data, including medical texts \citep{saab2024capabilities}.
 The medical questions are directly used as prompt for the LLM.
 Later iterations of the project proved that the medical question needed to be extended with additional patient information.
-The information was primarily needed for manual review by an expert user as the medical context of the patient is important to validate if the recipe is correct.
+The information was primarily needed for manual review by a medical professional as the medical context of the patient is important to validate if the recipe is correct.
 Together with the prompt the LLM is provided with a system instruction that specifies the task and expected output format.
 As the medical question if formulated in Dutch, the system instruction is also in Dutch.
 \begin{verbatim}
@@ -58,7 +58,7 @@ When the output is not correct the response will be reported as false.
 This allows the system to take corrective actions when the response is incorrect.
 
 \begin{figure}[H]
-    \includegraphics[width=0.5\textwidth]{figures/RAGSetupSequenceDiagram.png}
+    \includegraphics[width=0.95\textwidth]{figures/RAGSetupSequenceDiagram.png}
     \captionof{figure}{RAG-only setup for generating medical recipes with retrieval-augmented generation.}
     \label{fig:ragSetup}
 \end{figure}
@@ -70,7 +70,7 @@ The moderator model evaluates the generated output and flags or blocks incorrect
 The same LLM model is used for both the generation and moderation tasks, but with different system instructions.
 
 \begin{figure}[H]
-    \includegraphics[width=0.5\textwidth]{figures/moderatorSetupSequenceDiagram.png}
+    \includegraphics[width=0.8\textwidth]{figures/moderatorSetupSequenceDiagram.png}
     \captionof{figure}{Moderator-only setup for generating medical recipes with a moderator model.}
     \label{fig:moderatorSetup}
 \end{figure}
@@ -83,7 +83,7 @@ The moderator model evaluates the generated output and flags or blocks incorrect
 The recipe is considered correct when it is both grounded in the retrieved information and passes the moderation check.
 
 \begin{figure}[H]
-    \includegraphics[width=0.5\textwidth]{figures/combinedSetupSequenceDiagram.png}
+    \includegraphics[width=0.95\textwidth]{figures/combinedSetupSequenceDiagram.png}
     \captionof{figure}{Combined setup for generating medical recipes with retrieval-augmented generation and a moderator model.}
     \label{fig:combinedSetup}
 \end{figure}
@@ -95,7 +95,7 @@ No changes have been made to the model parameters like temperature or top-p samp
 To be able to process the entire dataset efficiently, the medical questions and recipes are processed in the baseline setup as one batch of 200 questions.
 For running the guardrail mechanisms, the model is called in a loop for each baseline answer.
 This setup deviates from the intended guardrail setup, but makes data analysis easier and more efficient.
-When the initial prompt to the model would generate different answers the performance of the guardrail mechanisms would be harder to compare.
+When the initial baseline prompt to the model would generate different answers the performance of the guardrail mechanisms would be harder to compare.
 Feeding the same baseline answers to all guardrail mechanisms allows for a fair comparison of the performance of the different guardrail mechanisms.
 
 \subsection{Stimuli}
