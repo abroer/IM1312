@@ -1,27 +1,20 @@
 @startuml
-title Combined Guardrail Setup – Decision After Moderator and RAG Validation
-
 actor User
-participant GenAI as "Gen AI"
-participant Moderator as "Check Recipe"
-participant GenAI2 as "Gen AI\n(Validator)"
-participant RAG as "Medical Docs"
-note right of RAG
-(apotheek.nl)
-end note
+participant "Gen AI\n(main model)" as GenAI
+participant "Retriever\n" as RAG
+participant "Medical Sources\n(e.g. apotheek.nl)" as Sources
+participant "Gen AI validator\n(validator module)" as RAG_AI
 
-User -> GenAI : Prompt (medical question)
-GenAI --> Moderator : Response (recipe)
 
-' Moderator asks GenAI2 to validate
-Moderator -> GenAI2 : Prompt (check for correctness)
-GenAI2 --> GenAI : Validation output (internal analysis)
-
-' GenAI consults RAG for final verification
-GenAI -> RAG : Prompt (check with content)
-RAG --> GenAI : Final decision (correct / incorrect)
-
-' GenAI sends final result to the user
-GenAI --> User : Response (recipe + validation)
-
+User -> GenAI : Ask medical question
+GenAI -> GenAI : Generate initial response
+GenAI -> RAG : Retrieve supporting medical documents
+RAG -> Sources : Query trusted medical knowledge base
+Sources --> RAG : Return relevant documents
+RAG --> RAG_AI : Provide retrieved information
+RAG_AI -> RAG_AI : Validate generated response with evidence
+RAG_AI --> GenAI : Validation result (e.g. correct/incorrect)
+GenAI -> RAG_AI : Validate response (AI-powered)
+RAG_AI --> GenAI : Validation result (e.g. correct/incorrect)
+GenAI --> User : Return (validated) response
 @enduml
