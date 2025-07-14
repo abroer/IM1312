@@ -42,7 +42,7 @@ Further research is needed to understand how these parameters affect model behav
 Correctness was operationalized based on expert-reviewed criteria: appropriate medication, dosage, and indication tailored to patient context.
 This strict definition ensured clinical relevance but may have penalized otherwise reasonable alternatives.
 Future work could explore graded correctness or confidence scoring to better reflect real-world clinical decision-making, where multiple valid options may exist.
-The introduction of reasoning and confidence scoring has been explored in \autoref{kang2024r}.
+The introduction of reasoning and confidence scoring has been explored in \citep{kang2024r}.
 A similar approach could be applied to the guardrail approaches in this study to better reflect the clinical decision-making process.
 
 \subsection{Input Quality and Model Limitations}
@@ -52,7 +52,7 @@ This highlights the importance of high-quality, well-structured prompts in elici
 Further improvement of the performance can be achieved by introducing input guardrails to ensure that the input is up to a level where reasonable answers can be expected.
 For interactive applications the input guardrails can be used to guide the user to provide the necessary information.
 This will make sure that the input passes only when a certain level of input quality confidence is reached.
-An implementation that mimics the interaction of a medical professional with a patient is described in \autoref{hsu2025medplan}.
+An implementation that mimics the interaction of a medical professional with a patient is described in \citep{hsu2025medplan}.
 
 \subsection*{Conclusion}
 This research demonstrates that guardrails can significantly improve the correctness of LLM outputs in medical contexts, but no single researched approach guarantees perfection.
