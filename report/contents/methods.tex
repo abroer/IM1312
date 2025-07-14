@@ -44,7 +44,7 @@ As the medical question if formulated in Dutch, the system instruction is also i
 \end{verbatim}
 
 \begin{figure}[H]
-    \includegraphics[width=0.5\textwidth]{figures/baselineSetup.png}
+    \includegraphics[width=0.5\textwidth]{figures/baselineSetupSequenceDiagram.png}
     \captionof{figure}{Baseline setup for generating medical recipes without guardrails.}
     \label{fig:baselineSetup}
 \end{figure}
@@ -58,7 +58,7 @@ When the output is not correct the response will be reported as false.
 This allows the system to take corrective actions when the response is incorrect.
 
 \begin{figure}[H]
-    \includegraphics[width=0.5\textwidth]{figures/RAGSetup.png}
+    \includegraphics[width=0.5\textwidth]{figures/RAGSetupSequenceDiagram.png}
     \captionof{figure}{RAG-only setup for generating medical recipes with retrieval-augmented generation.}
     \label{fig:ragSetup}
 \end{figure}
@@ -70,7 +70,7 @@ The moderator model evaluates the generated output and flags or blocks incorrect
 The same LLM model is used for both the generation and moderation tasks, but with different system instructions.
 
 \begin{figure}[H]
-    \includegraphics[width=0.5\textwidth]{figures/moderatorSetup.png}
+    \includegraphics[width=0.5\textwidth]{figures/moderatorSetupSequenceDiagram.png}
     \captionof{figure}{Moderator-only setup for generating medical recipes with a moderator model.}
     \label{fig:moderatorSetup}
 \end{figure}
@@ -83,7 +83,7 @@ The moderator model evaluates the generated output and flags or blocks incorrect
 The recipe is considered correct when it is both grounded in the retrieved information and passes the moderation check.
 
 \begin{figure}[H]
-    \includegraphics[width=0.5\textwidth]{figures/combinedSetup.png}
+    \includegraphics[width=0.5\textwidth]{figures/combinedSetupSequenceDiagram.png}
     \captionof{figure}{Combined setup for generating medical recipes with retrieval-augmented generation and a moderator model.}
     \label{fig:combinedSetup}
 \end{figure}
